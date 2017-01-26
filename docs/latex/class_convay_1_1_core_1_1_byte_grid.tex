@@ -1,0 +1,156 @@
+\hypertarget{class_convay_1_1_core_1_1_byte_grid}{}\section{Dokumentacja klasy Convay.\+Core.\+Byte\+Grid}
+\label{class_convay_1_1_core_1_1_byte_grid}\index{Convay.\+Core.\+Byte\+Grid@{Convay.\+Core.\+Byte\+Grid}}
+
+
+Siatka gry w życie oparta na bajtach  
+
+
+
+
+Diagram dziedziczenia dla Convay.\+Core.\+Byte\+Grid
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{class_convay_1_1_core_1_1_byte_grid__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Convay.\+Core.\+Byte\+Grid\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{class_convay_1_1_core_1_1_byte_grid__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_convay_1_1_core_1_1_byte_grid_a93744df4805647b20c435659ba40a6a5}{Byte\+Grid} (int x\+Size, int y\+Size)
+\begin{DoxyCompactList}\small\item\em Konstruuje siatkę o zadanej wielkości \end{DoxyCompactList}\item 
+override \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} \hyperlink{class_convay_1_1_core_1_1_byte_grid_aff3101705112bb6f708d694b34a7e5f2}{Clone} ()
+\begin{DoxyCompactList}\small\item\em Zwraca kopię siatki \end{DoxyCompactList}\item 
+override void \hyperlink{class_convay_1_1_core_1_1_byte_grid_a75128576734ebd27f9b469ed0f7aaeee}{Initialize} (int x\+Size, int y\+Size)
+\begin{DoxyCompactList}\small\item\em Ustawia pustą siatkę o zadanej wielkości \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Właściwości}
+\begin{DoxyCompactItemize}
+\item 
+override bool \hyperlink{class_convay_1_1_core_1_1_byte_grid_ae80450d07296d3c4980ab27b9d0ef03b}{this\mbox{[}int x, int y\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa czy punkt jest żywy \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\subsection{Opis szczegółowy}
+Siatka gry w życie oparta na bajtach 
+
+
+
+Definicja w linii 9 pliku Byte\+Grid.\+cs.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_convay_1_1_core_1_1_byte_grid_a93744df4805647b20c435659ba40a6a5}{}\label{class_convay_1_1_core_1_1_byte_grid_a93744df4805647b20c435659ba40a6a5} 
+\index{Convay\+::\+Core\+::\+Byte\+Grid@{Convay\+::\+Core\+::\+Byte\+Grid}!Byte\+Grid@{Byte\+Grid}}
+\index{Byte\+Grid@{Byte\+Grid}!Convay\+::\+Core\+::\+Byte\+Grid@{Convay\+::\+Core\+::\+Byte\+Grid}}
+\subsubsection{\texorpdfstring{Byte\+Grid()}{ByteGrid()}}
+{\footnotesize\ttfamily Convay.\+Core.\+Byte\+Grid.\+Byte\+Grid (\begin{DoxyParamCaption}\item[{int}]{x\+Size,  }\item[{int}]{y\+Size }\end{DoxyParamCaption})}
+
+
+
+Konstruuje siatkę o zadanej wielkości 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x\+Size} & Szerokość\\
+\hline
+{\em y\+Size} & Wysokość\\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 17 pliku Byte\+Grid.\+cs.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_convay_1_1_core_1_1_byte_grid_aff3101705112bb6f708d694b34a7e5f2}{}\label{class_convay_1_1_core_1_1_byte_grid_aff3101705112bb6f708d694b34a7e5f2} 
+\index{Convay\+::\+Core\+::\+Byte\+Grid@{Convay\+::\+Core\+::\+Byte\+Grid}!Clone@{Clone}}
+\index{Clone@{Clone}!Convay\+::\+Core\+::\+Byte\+Grid@{Convay\+::\+Core\+::\+Byte\+Grid}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily override \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} Convay.\+Core.\+Byte\+Grid.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Zwraca kopię siatki 
+
+\begin{DoxyReturn}{Zwraca}
+kopia siatki
+\end{DoxyReturn}
+
+
+Implementuje \hyperlink{class_convay_1_1_core_1_1_array_grid_a139eba7f8a6780b4ecbc446959e159ad}{Convay.\+Core.\+Array\+Grid$<$ byte $>$}.
+
+
+
+Definicja w linii 45 pliku Byte\+Grid.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_byte_grid_a75128576734ebd27f9b469ed0f7aaeee}{}\label{class_convay_1_1_core_1_1_byte_grid_a75128576734ebd27f9b469ed0f7aaeee} 
+\index{Convay\+::\+Core\+::\+Byte\+Grid@{Convay\+::\+Core\+::\+Byte\+Grid}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Convay\+::\+Core\+::\+Byte\+Grid@{Convay\+::\+Core\+::\+Byte\+Grid}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily override void Convay.\+Core.\+Byte\+Grid.\+Initialize (\begin{DoxyParamCaption}\item[{int}]{x\+Size,  }\item[{int}]{y\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Ustawia pustą siatkę o zadanej wielkości 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x\+Size} & Szerokość\\
+\hline
+{\em y\+Size} & Wysokość\\
+\hline
+\end{DoxyParams}
+
+
+Implementuje \hyperlink{class_convay_1_1_core_1_1_array_grid_a49501f55af9f747ed75cb94563b6d641}{Convay.\+Core.\+Array\+Grid$<$ byte $>$}.
+
+
+
+Definicja w linii 63 pliku Byte\+Grid.\+cs.
+
+
+
+\subsection{Dokumentacja właściwości}
+\hypertarget{class_convay_1_1_core_1_1_byte_grid_ae80450d07296d3c4980ab27b9d0ef03b}{}\label{class_convay_1_1_core_1_1_byte_grid_ae80450d07296d3c4980ab27b9d0ef03b} 
+\index{Convay\+::\+Core\+::\+Byte\+Grid@{Convay\+::\+Core\+::\+Byte\+Grid}!this\mbox{[}int x, int y\mbox{]}@{this[int x, int y]}}
+\index{this\mbox{[}int x, int y\mbox{]}@{this[int x, int y]}!Convay\+::\+Core\+::\+Byte\+Grid@{Convay\+::\+Core\+::\+Byte\+Grid}}
+\subsubsection{\texorpdfstring{this[int x, int y]}{this[int x, int y]}}
+{\footnotesize\ttfamily override bool Convay.\+Core.\+Byte\+Grid.\+this\mbox{[}int x, int y\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Określa czy punkt jest żywy 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x\+Coordinate} & Współrzędna x\\
+\hline
+{\em y\+Coordinate} & Współrzędna y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true gdy żywy, false gdy martwy
+\end{DoxyReturn}
+
+
+Definicja w linii 28 pliku Byte\+Grid.\+cs.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Convay/\hyperlink{_byte_grid_8cs}{Byte\+Grid.\+cs}\end{DoxyCompactItemize}

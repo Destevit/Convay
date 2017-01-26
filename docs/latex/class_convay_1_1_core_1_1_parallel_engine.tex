@@ -1,0 +1,86 @@
+\hypertarget{class_convay_1_1_core_1_1_parallel_engine}{}\section{Dokumentacja klasy Convay.\+Core.\+Parallel\+Engine}
+\label{class_convay_1_1_core_1_1_parallel_engine}\index{Convay.\+Core.\+Parallel\+Engine@{Convay.\+Core.\+Parallel\+Engine}}
+
+
+Silnik gry w życie pracujący na wielu wątkach  
+
+
+
+
+Diagram dziedziczenia dla Convay.\+Core.\+Parallel\+Engine
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{class_convay_1_1_core_1_1_parallel_engine__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Convay.\+Core.\+Parallel\+Engine\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{class_convay_1_1_core_1_1_parallel_engine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+override \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} \hyperlink{class_convay_1_1_core_1_1_parallel_engine_a32e4a4911dcbb74f555b99944940d921}{Take\+Step} (\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} grid, \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules}{I\+Rules} game\+Rules)
+\begin{DoxyCompactList}\small\item\em Wykonuje równolegle jeden krok gry \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\subsection{Opis szczegółowy}
+Silnik gry w życie pracujący na wielu wątkach 
+
+
+
+Definicja w linii 9 pliku Parallel\+Engine.\+cs.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_convay_1_1_core_1_1_parallel_engine_a32e4a4911dcbb74f555b99944940d921}{}\label{class_convay_1_1_core_1_1_parallel_engine_a32e4a4911dcbb74f555b99944940d921} 
+\index{Convay\+::\+Core\+::\+Parallel\+Engine@{Convay\+::\+Core\+::\+Parallel\+Engine}!Take\+Step@{Take\+Step}}
+\index{Take\+Step@{Take\+Step}!Convay\+::\+Core\+::\+Parallel\+Engine@{Convay\+::\+Core\+::\+Parallel\+Engine}}
+\subsubsection{\texorpdfstring{Take\+Step()}{TakeStep()}}
+{\footnotesize\ttfamily override \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} Convay.\+Core.\+Parallel\+Engine.\+Take\+Step (\begin{DoxyParamCaption}\item[{\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid}}]{grid,  }\item[{\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules}{I\+Rules}}]{game\+Rules }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Wykonuje równolegle jeden krok gry 
+
+
+\begin{DoxyParams}{Parametry}
+{\em grid} & Początkowa siatka\\
+\hline
+{\em game\+Rules} & Zasady według których ma być liczona gra\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Nowa siatka
+\end{DoxyReturn}
+
+
+Reimplementowana z \hyperlink{class_convay_1_1_core_1_1_engine_a02713f5cb5242a65d2e1816512e0b791}{Convay.\+Core.\+Engine}.
+
+
+
+Definicja w linii 17 pliku Parallel\+Engine.\+cs.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_convay_1_1_core_1_1_parallel_engine_a32e4a4911dcbb74f555b99944940d921_cgraph}
+\end{center}
+\end{figure}
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Convay/\hyperlink{_parallel_engine_8cs}{Parallel\+Engine.\+cs}\end{DoxyCompactItemize}

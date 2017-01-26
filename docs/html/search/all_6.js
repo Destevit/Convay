@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['game',['Game',['../class_convay_1_1_core_1_1_game.html',1,'Convay::Core']]],
+  ['game',['Game',['../class_convay_1_1_core_1_1_game.html#a6a97d86b561918a025ea1df73c86eee0',1,'Convay::Core::Game']]],
+  ['game_2ecs',['Game.cs',['../_game_8cs.html',1,'']]],
+  ['gamestatechanged',['GameStateChanged',['../class_convay_1_1_core_1_1_game.html#ab88c319349721a3a8e2a4e17ef2d60e6',1,'Convay.Core.Game.GameStateChanged()'],['../interface_convay_1_1_core_1_1_interfaces_1_1_i_game.html#a7c8532b2d8ae9edd0e39a21cab0a8b9f',1,'Convay.Core.Interfaces.IGame.GameStateChanged()']]],
+  ['genericgrid',['GenericGrid',['../class_convay_1_1_core_1_1_generic_grid.html',1,'Convay::Core']]],
+  ['genericgrid',['GenericGrid',['../class_convay_1_1_core_1_1_generic_grid.html#a3507e1f2a0efa825457ad47b6c4121b2',1,'Convay::Core::GenericGrid']]],
+  ['genericgrid_2ecs',['GenericGrid.cs',['../_generic_grid_8cs.html',1,'']]],
+  ['getpoint',['GetPoint',['../class_convay_1_1_core_1_1_array_grid.html#a9c0d58bccaf8fec674219fbcc8295e95',1,'Convay.Core.ArrayGrid.GetPoint()'],['../interface_convay_1_1_core_1_1_interfaces_1_1_i_byte_grid.html#aecc410108b7a1d46531b458bd0837217',1,'Convay.Core.Interfaces.IByteGrid.GetPoint()']]],
+  ['grid',['Grid',['../class_convay_1_1_core_1_1_grid_changed_event_args.html#ac9ca2bcbf1c6ab31c34c2b5c93729e4b',1,'Convay.Core.GridChangedEventArgs.Grid()'],['../class_convay_1_1_core_1_1_game.html#a079870860cd4f61916e99b839750e520',1,'Convay.Core.Game.Grid()'],['../interface_convay_1_1_core_1_1_interfaces_1_1_i_game.html#ac5e7536330b91c7af27925ba34deb599',1,'Convay.Core.Interfaces.IGame.Grid()'],['../class_convay_1_1_win_forms_game_1_1_settings_form.html#a21206ca71b836cbf292866fc13eb85f4',1,'Convay.WinFormsGame.SettingsForm.Grid()']]],
+  ['gridchanged',['GridChanged',['../class_convay_1_1_core_1_1_game.html#ae2338714ffd4c5ff33dd8a67e0d7d573',1,'Convay.Core.Game.GridChanged()'],['../interface_convay_1_1_core_1_1_interfaces_1_1_i_game.html#abfec674f941f9534cffa15f6bd5c96b1',1,'Convay.Core.Interfaces.IGame.GridChanged()']]],
+  ['gridchangedeventargs',['GridChangedEventArgs',['../class_convay_1_1_core_1_1_grid_changed_event_args.html',1,'Convay::Core']]],
+  ['gridchangedeventargs',['GridChangedEventArgs',['../class_convay_1_1_core_1_1_grid_changed_event_args.html#aac0e73356d65dff57090526ed694b024',1,'Convay::Core::GridChangedEventArgs']]],
+  ['gridcorepoint',['GridCorePoint',['../class_convay_1_1_win_forms_game_1_1_settings_form.html#a4226b510bf8cf0a0f4fc5bc2e9c334a6aa977546c97dda57fca9e9290f7c0eef0',1,'Convay::WinFormsGame::SettingsForm']]],
+  ['gridindexoutofrange',['GridIndexOutOfRange',['../class_convay_1_1_core_1_1_exception_messages.html#a7976222cccaf7c82b987520268df483b',1,'Convay::Core::ExceptionMessages']]],
+  ['gridserializer',['GridSerializer',['../class_convay_1_1_core_1_1_grid_serializer.html',1,'Convay::Core']]],
+  ['gridserializer_2ecs',['GridSerializer.cs',['../_grid_serializer_8cs.html',1,'']]],
+  ['gridtype',['GridType',['../class_convay_1_1_win_forms_game_1_1_settings_form.html#a4226b510bf8cf0a0f4fc5bc2e9c334a6',1,'Convay::WinFormsGame::SettingsForm']]]
+];

@@ -1,0 +1,11 @@
+<map id="Convay.WinFormsGame.MainForm.MainForm" name="Convay.WinFormsGame.MainForm.MainForm">
+<area shape="rect" id="node2" href="$interface_convay_1_1_core_1_1_interfaces_1_1_i_game.html#a2dec82cc222354ba16ecfa30a0158cac" title="Metoda zatrzymująca grę " alt="" coords="268,5,524,32"/>
+<area shape="rect" id="node3" href="$interface_convay_1_1_core_1_1_interfaces_1_1_i_game.html#a76cff5d7173fd5c3b7f7959b0e7baa1b" title="Metoda startująca grę " alt="" coords="283,57,509,98"/>
+<area shape="rect" id="node4" href="$interface_convay_1_1_core_1_1_interfaces_1_1_i_game.html#a782f64a6dd964db6c27752dd9962c1c1" title="Losuje siatkę gry " alt="" coords="283,122,509,163"/>
+<area shape="rect" id="node5" href="$interface_convay_1_1_core_1_1_interfaces_1_1_i_rules.html#a7863e051cf9285ab1ef5b888c74d5018" title="Zwraca string w formacie &quot;a/b&quot;, gdzie: a &#45; zasady dla żywych, b &#45; zasady dla martwych ..." alt="" coords="285,187,507,229"/>
+<area shape="rect" id="node6" href="$interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_serializer.html#ab6297bf5bb8f31e4ee4c27e4edfcd2bc" title="Ładuje siatkę ze strumienia " alt="" coords="291,253,501,294"/>
+<area shape="rect" id="node7" href="$interface_convay_1_1_win_extension_1_1_i_byte_visualizer.html#a08b8938af09e659a709c2e097268c92f" title="Konwertuje siatkę na bitmapę " alt="" coords="295,318,497,359"/>
+<area shape="rect" id="node8" href="$interface_convay_1_1_win_extension_1_1_i_visualizer.html#a17c620a076c165286065546a87165dea" title="Konwertuje siatkę na bitmapę " alt="" coords="277,383,515,425"/>
+<area shape="rect" id="node9" href="$interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_serializer.html#ac8de4f85acd03d95f73a7c7f85db43b2" title="Zapisuje siatkę do strumienia " alt="" coords="291,449,501,490"/>
+<area shape="rect" id="node10" href="$interface_convay_1_1_core_1_1_interfaces_1_1_i_grid.html#afb85615bea4fe14885fc2c36b16a9309" title="Zwraca kopię siatki " alt="" coords="289,514,503,555"/>
+</map>

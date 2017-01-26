@@ -1,0 +1,4 @@
+<map id="Convay.WinExtension.IVisualizer" name="Convay.WinExtension.IVisualizer">
+<area shape="rect" id="node2" href="$class_convay_1_1_win_extension_1_1_safe_visualizer.html" title="Wizualizator siatki z kodem zarządzanym " alt="" coords="5,80,203,121"/>
+<area shape="rect" id="node3" href="$class_convay_1_1_win_extension_1_1_unsafe_visualizer.html" title="Wizualizator wykorzystujący kod niezarządazny, operuje na wskaźnikach " alt="" coords="227,80,440,121"/>
+</map>

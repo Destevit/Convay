@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Convay: Plik źródłowy WinFormsGame/SettingsForm.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Convay
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_settings_form_8cs_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SettingsForm.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_settings_form_8cs.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_convay.html">Convay</a>.<a class="code" href="namespace_convay_1_1_win_extension.html">WinExtension</a>;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.Collections.Generic;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.ComponentModel;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.Data;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.Drawing;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.Linq;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.Text;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.Windows.Forms;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_convay.html">Convay</a>.WinFormsGame</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_convay_1_1_win_forms_game_1_1_settings_form.html">   13</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">partial class </span><a class="code" href="class_convay_1_1_win_forms_game_1_1_settings_form.html">SettingsForm</a> : Form</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a37834e752cfe1f75738c237dd98d3d45">   15</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a37834e752cfe1f75738c237dd98d3d45">EngineType</a></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            Engine,</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            ParallelEngine</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a4226b510bf8cf0a0f4fc5bc2e9c334a6">   20</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a4226b510bf8cf0a0f4fc5bc2e9c334a6">GridType</a></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            GridCorePoint,</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            ByteGrid</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a7918e2a1b1587472aa065d4db7a13537">   25</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a7918e2a1b1587472aa065d4db7a13537">DrawingType</a></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            safeDrawing,</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            unsafeDrawing</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#addc2d79faecc53f1287e88582bbfc376">   30</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#addc2d79faecc53f1287e88582bbfc376">SettingsForm</a>()</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            InitializeComponent();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            engineStandard.Checked = Settings.engineType == typeof(Core.Engine);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            parallelEngine.Checked = Settings.engineType == typeof(Core.ParallelEngine);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            gridCorePointType.Checked = Settings.gridType == typeof(Core.GenericGrid&lt;Core.Point&gt;);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            byteGridType.Checked = Settings.gridType == typeof(Core.ByteGrid);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            unsafeType.Checked = Settings.visualizerType == typeof(<a class="code" href="class_convay_1_1_win_extension_1_1_unsafe_visualizer.html">UnsafeVisualizer</a>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            safeType.Checked = Settings.visualizerType == typeof(<a class="code" href="class_convay_1_1_win_extension_1_1_safe_visualizer.html">SafeVisualizer</a>);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a37834e752cfe1f75738c237dd98d3d45">EngineType</a> Engine</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#aad52f40495b9d8607969abc2ee58c957">   41</a></span>&#160;        {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keyword">get</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <a class="code" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a37834e752cfe1f75738c237dd98d3d45">EngineType</a> et = 0;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">if</span> (engineStandard.Checked)</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    et = <a class="code" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a37834e752cfe1f75738c237dd98d3d45">EngineType</a>.Engine;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                }</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordflow">if</span> (parallelEngine.Checked)</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                {</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    et = <a class="code" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a37834e752cfe1f75738c237dd98d3d45">EngineType</a>.ParallelEngine;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                }</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">return</span> et;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            }</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a4226b510bf8cf0a0f4fc5bc2e9c334a6">GridType</a> Grid</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a21206ca71b836cbf292866fc13eb85f4">   57</a></span>&#160;        {</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keyword">get</span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <a class="code" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a4226b510bf8cf0a0f4fc5bc2e9c334a6">GridType</a> grid = 0;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">if</span> (gridCorePointType.Checked)</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                    grid = <a class="code" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a4226b510bf8cf0a0f4fc5bc2e9c334a6">GridType</a>.GridCorePoint;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                }</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordflow">if</span> (byteGridType.Checked)</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    grid = <a class="code" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a4226b510bf8cf0a0f4fc5bc2e9c334a6">GridType</a>.ByteGrid;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                }</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordflow">return</span> grid;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            }</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a7918e2a1b1587472aa065d4db7a13537">DrawingType</a> Drawing</div><div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a5c69453b0b77e84e7bf2728623404968">   73</a></span>&#160;        {</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keyword">get</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            {</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <a class="code" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a7918e2a1b1587472aa065d4db7a13537">DrawingType</a> draw = 0;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <span class="keywordflow">if</span> (safeType.Checked)</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                {</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                    draw = <a class="code" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a7918e2a1b1587472aa065d4db7a13537">DrawingType</a>.safeDrawing;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                }</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <span class="keywordflow">if</span> (unsafeType.Checked)</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                    draw = <a class="code" href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a7918e2a1b1587472aa065d4db7a13537">DrawingType</a>.unsafeDrawing;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                }</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">return</span> draw;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            }</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div><div class="ttc" id="class_convay_1_1_win_forms_game_1_1_settings_form_html_addc2d79faecc53f1287e88582bbfc376"><div class="ttname"><a href="class_convay_1_1_win_forms_game_1_1_settings_form.html#addc2d79faecc53f1287e88582bbfc376">Convay.WinFormsGame.SettingsForm.SettingsForm</a></div><div class="ttdeci">SettingsForm()</div><div class="ttdef"><b>Definition:</b> <a href="_settings_form_8cs_source.html#l00030">SettingsForm.cs:30</a></div></div>
+<div class="ttc" id="namespace_convay_1_1_win_extension_html"><div class="ttname"><a href="namespace_convay_1_1_win_extension.html">Convay.WinExtension</a></div><div class="ttdef"><b>Definition:</b> <a href="_bitmap_serializer_8cs_source.html#l00011">BitmapSerializer.cs:11</a></div></div>
+<div class="ttc" id="namespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div></div>
+<div class="ttc" id="class_convay_1_1_win_extension_1_1_unsafe_visualizer_html"><div class="ttname"><a href="class_convay_1_1_win_extension_1_1_unsafe_visualizer.html">Convay.WinExtension.UnsafeVisualizer</a></div><div class="ttdoc">Wizualizator wykorzystujący kod niezarządazny, operuje na wskaźnikach </div><div class="ttdef"><b>Definition:</b> <a href="_unsafe_visualizer_8cs_source.html#l00010">UnsafeVisualizer.cs:10</a></div></div>
+<div class="ttc" id="class_convay_1_1_win_extension_1_1_safe_visualizer_html"><div class="ttname"><a href="class_convay_1_1_win_extension_1_1_safe_visualizer.html">Convay.WinExtension.SafeVisualizer</a></div><div class="ttdoc">Wizualizator siatki z kodem zarządzanym </div><div class="ttdef"><b>Definition:</b> <a href="_safe_visualizer_8cs_source.html#l00010">SafeVisualizer.cs:10</a></div></div>
+<div class="ttc" id="namespace_convay_html"><div class="ttname"><a href="namespace_convay.html">Convay</a></div></div>
+<div class="ttc" id="class_convay_1_1_win_forms_game_1_1_settings_form_html_a7918e2a1b1587472aa065d4db7a13537"><div class="ttname"><a href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a7918e2a1b1587472aa065d4db7a13537">Convay.WinFormsGame.SettingsForm.DrawingType</a></div><div class="ttdeci">DrawingType</div><div class="ttdef"><b>Definition:</b> <a href="_settings_form_8cs_source.html#l00025">SettingsForm.cs:25</a></div></div>
+<div class="ttc" id="class_convay_1_1_win_forms_game_1_1_settings_form_html"><div class="ttname"><a href="class_convay_1_1_win_forms_game_1_1_settings_form.html">Convay.WinFormsGame.SettingsForm</a></div><div class="ttdef"><b>Definition:</b> <a href="_settings_form_8cs_source.html#l00013">SettingsForm.cs:13</a></div></div>
+<div class="ttc" id="class_convay_1_1_win_forms_game_1_1_settings_form_html_a4226b510bf8cf0a0f4fc5bc2e9c334a6"><div class="ttname"><a href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a4226b510bf8cf0a0f4fc5bc2e9c334a6">Convay.WinFormsGame.SettingsForm.GridType</a></div><div class="ttdeci">GridType</div><div class="ttdef"><b>Definition:</b> <a href="_settings_form_8cs_source.html#l00020">SettingsForm.cs:20</a></div></div>
+<div class="ttc" id="class_convay_1_1_win_forms_game_1_1_settings_form_html_a37834e752cfe1f75738c237dd98d3d45"><div class="ttname"><a href="class_convay_1_1_win_forms_game_1_1_settings_form.html#a37834e752cfe1f75738c237dd98d3d45">Convay.WinFormsGame.SettingsForm.EngineType</a></div><div class="ttdeci">EngineType</div><div class="ttdef"><b>Definition:</b> <a href="_settings_form_8cs_source.html#l00015">SettingsForm.cs:15</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_30910f284f648129d7100e5a547f1546.html">WinFormsGame</a></li><li class="navelem"><a class="el" href="_settings_form_8cs.html">SettingsForm.cs</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
+</body>
+</html>

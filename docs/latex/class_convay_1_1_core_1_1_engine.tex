@@ -1,0 +1,222 @@
+\hypertarget{class_convay_1_1_core_1_1_engine}{}\section{Dokumentacja klasy Convay.\+Core.\+Engine}
+\label{class_convay_1_1_core_1_1_engine}\index{Convay.\+Core.\+Engine@{Convay.\+Core.\+Engine}}
+
+
+Silnik gry w życie  
+
+
+
+
+Diagram dziedziczenia dla Convay.\+Core.\+Engine
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{class_convay_1_1_core_1_1_engine__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Convay.\+Core.\+Engine\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{class_convay_1_1_core_1_1_engine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{class_convay_1_1_core_1_1_engine_af5d8b7993421d67c3fc6ba702521a7cd}{Count\+Alive\+Neighbours} (\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} grid, int x\+Coordinate, int y\+Coordinate)
+\begin{DoxyCompactList}\small\item\em Zlicza żywych sąsiadów punktu \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_convay_1_1_core_1_1_engine_a51ab6b04c07f0803751d8013b422cc3d}{Count\+Dead\+Neighbours} (\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} grid, int x\+Coordinate, int y\+Coordinate)
+\begin{DoxyCompactList}\small\item\em Zlicza martwych sąsiadów punktu \end{DoxyCompactList}\item 
+virtual \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} \hyperlink{class_convay_1_1_core_1_1_engine_a02713f5cb5242a65d2e1816512e0b791}{Take\+Step} (\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} grid, \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules}{I\+Rules} game\+Rules)
+\begin{DoxyCompactList}\small\item\em Przeprowadza krok gry w życie \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{class_convay_1_1_core_1_1_engine_a0d8721d8809a865703b4abb38987f487}{Alive} (\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} grid, int x, int y)
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy punkt żyje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+Resource\+Manager \hyperlink{class_convay_1_1_core_1_1_engine_a42e18f3b5a92a0de8957dc23010ca822}{exception\+Resource} = new Resource\+Manager(typeof(\hyperlink{class_convay_1_1_core_1_1_exception_messages}{Exception\+Messages}))
+\begin{DoxyCompactList}\small\item\em Zasób z tekstami wyjątków \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Silnik gry w życie 
+
+
+
+Definicja w linii 10 pliku Engine.\+cs.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_convay_1_1_core_1_1_engine_a0d8721d8809a865703b4abb38987f487}{}\label{class_convay_1_1_core_1_1_engine_a0d8721d8809a865703b4abb38987f487} 
+\index{Convay\+::\+Core\+::\+Engine@{Convay\+::\+Core\+::\+Engine}!Alive@{Alive}}
+\index{Alive@{Alive}!Convay\+::\+Core\+::\+Engine@{Convay\+::\+Core\+::\+Engine}}
+\subsubsection{\texorpdfstring{Alive()}{Alive()}}
+{\footnotesize\ttfamily virtual int Convay.\+Core.\+Engine.\+Alive (\begin{DoxyParamCaption}\item[{\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid}}]{grid,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Sprawdza, czy punkt żyje. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em grid} & siatka\\
+\hline
+{\em x} & Współrzędna x\\
+\hline
+{\em y} & Współrzędna y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Jeżeli tak, zwraca \textquotesingle{}1\textquotesingle{}, jeżeli nie lub wykracza poza zakres -\/ zwraca \textquotesingle{}0\textquotesingle{}
+\end{DoxyReturn}
+
+
+Definicja w linii 88 pliku Engine.\+cs.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_convay_1_1_core_1_1_engine_a0d8721d8809a865703b4abb38987f487_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{class_convay_1_1_core_1_1_engine_af5d8b7993421d67c3fc6ba702521a7cd}{}\label{class_convay_1_1_core_1_1_engine_af5d8b7993421d67c3fc6ba702521a7cd} 
+\index{Convay\+::\+Core\+::\+Engine@{Convay\+::\+Core\+::\+Engine}!Count\+Alive\+Neighbours@{Count\+Alive\+Neighbours}}
+\index{Count\+Alive\+Neighbours@{Count\+Alive\+Neighbours}!Convay\+::\+Core\+::\+Engine@{Convay\+::\+Core\+::\+Engine}}
+\subsubsection{\texorpdfstring{Count\+Alive\+Neighbours()}{CountAliveNeighbours()}}
+{\footnotesize\ttfamily virtual int Convay.\+Core.\+Engine.\+Count\+Alive\+Neighbours (\begin{DoxyParamCaption}\item[{\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid}}]{grid,  }\item[{int}]{x\+Coordinate,  }\item[{int}]{y\+Coordinate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Zlicza żywych sąsiadów punktu 
+
+
+\begin{DoxyParams}{Parametry}
+{\em grid} & siatka do przeliczenia\\
+\hline
+{\em x\+Coordinate} & Współrzędna x\\
+\hline
+{\em y\+Coordinate} & Współrzędna y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+liczba żywych sąsiadów
+\end{DoxyReturn}
+
+
+Implementuje \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine_a0796a83275b1ec955e3f3f82d0a51a3d}{Convay.\+Core.\+Interfaces.\+I\+Engine}.
+
+
+
+Definicja w linii 24 pliku Engine.\+cs.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_convay_1_1_core_1_1_engine_af5d8b7993421d67c3fc6ba702521a7cd_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{class_convay_1_1_core_1_1_engine_a51ab6b04c07f0803751d8013b422cc3d}{}\label{class_convay_1_1_core_1_1_engine_a51ab6b04c07f0803751d8013b422cc3d} 
+\index{Convay\+::\+Core\+::\+Engine@{Convay\+::\+Core\+::\+Engine}!Count\+Dead\+Neighbours@{Count\+Dead\+Neighbours}}
+\index{Count\+Dead\+Neighbours@{Count\+Dead\+Neighbours}!Convay\+::\+Core\+::\+Engine@{Convay\+::\+Core\+::\+Engine}}
+\subsubsection{\texorpdfstring{Count\+Dead\+Neighbours()}{CountDeadNeighbours()}}
+{\footnotesize\ttfamily virtual int Convay.\+Core.\+Engine.\+Count\+Dead\+Neighbours (\begin{DoxyParamCaption}\item[{\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid}}]{grid,  }\item[{int}]{x\+Coordinate,  }\item[{int}]{y\+Coordinate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Zlicza martwych sąsiadów punktu 
+
+
+\begin{DoxyParams}{Parametry}
+{\em grid} & siatka do przeliczenia\\
+\hline
+{\em x\+Coordinate} & Współrzędna x\\
+\hline
+{\em y\+Coordinate} & Współrzędna y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+liczba martwych sąsiadów
+\end{DoxyReturn}
+
+
+Implementuje \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine_a4c04381822239d478438ee7012acf9ca}{Convay.\+Core.\+Interfaces.\+I\+Engine}.
+
+
+
+Definicja w linii 52 pliku Engine.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_engine_a02713f5cb5242a65d2e1816512e0b791}{}\label{class_convay_1_1_core_1_1_engine_a02713f5cb5242a65d2e1816512e0b791} 
+\index{Convay\+::\+Core\+::\+Engine@{Convay\+::\+Core\+::\+Engine}!Take\+Step@{Take\+Step}}
+\index{Take\+Step@{Take\+Step}!Convay\+::\+Core\+::\+Engine@{Convay\+::\+Core\+::\+Engine}}
+\subsubsection{\texorpdfstring{Take\+Step()}{TakeStep()}}
+{\footnotesize\ttfamily virtual \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} Convay.\+Core.\+Engine.\+Take\+Step (\begin{DoxyParamCaption}\item[{\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid}}]{grid,  }\item[{\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules}{I\+Rules}}]{game\+Rules }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Przeprowadza krok gry w życie 
+
+
+\begin{DoxyParams}{Parametry}
+{\em grid} & \\
+\hline
+{\em game\+Rules} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+
+\end{DoxyReturn}
+
+
+Implementuje \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine_a58f031ed5f145506e9dd1e6067c683a5}{Convay.\+Core.\+Interfaces.\+I\+Engine}.
+
+
+
+Reimplementowana w \hyperlink{class_convay_1_1_core_1_1_parallel_engine_a32e4a4911dcbb74f555b99944940d921}{Convay.\+Core.\+Parallel\+Engine}.
+
+
+
+Definicja w linii 63 pliku Engine.\+cs.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_convay_1_1_core_1_1_engine_a02713f5cb5242a65d2e1816512e0b791_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_convay_1_1_core_1_1_engine_a42e18f3b5a92a0de8957dc23010ca822}{}\label{class_convay_1_1_core_1_1_engine_a42e18f3b5a92a0de8957dc23010ca822} 
+\index{Convay\+::\+Core\+::\+Engine@{Convay\+::\+Core\+::\+Engine}!exception\+Resource@{exception\+Resource}}
+\index{exception\+Resource@{exception\+Resource}!Convay\+::\+Core\+::\+Engine@{Convay\+::\+Core\+::\+Engine}}
+\subsubsection{\texorpdfstring{exception\+Resource}{exceptionResource}}
+{\footnotesize\ttfamily Resource\+Manager Convay.\+Core.\+Engine.\+exception\+Resource = new Resource\+Manager(typeof(\hyperlink{class_convay_1_1_core_1_1_exception_messages}{Exception\+Messages}))\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Zasób z tekstami wyjątków 
+
+
+
+Definicja w linii 15 pliku Engine.\+cs.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Convay/\hyperlink{_engine_8cs}{Engine.\+cs}\end{DoxyCompactItemize}

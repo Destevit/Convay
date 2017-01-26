@@ -1,0 +1,5 @@
+<map id="Convay.Core.Engine.TakeStep" name="Convay.Core.Engine.TakeStep">
+<area shape="rect" id="node2" href="$interface_convay_1_1_core_1_1_interfaces_1_1_i_grid.html#afb85615bea4fe14885fc2c36b16a9309" title="Zwraca kopię siatki " alt="" coords="277,5,490,47"/>
+<area shape="rect" id="node3" href="$interface_convay_1_1_core_1_1_interfaces_1_1_i_rules.html#ad184ed56601ab383d06db323a83fa48e" title="Sprawdza czy spełnia zasady dla żywych punktów " alt="" coords="272,71,495,112"/>
+<area shape="rect" id="node4" href="$interface_convay_1_1_core_1_1_interfaces_1_1_i_rules.html#a180f2cc36d8f7db4407f679c18cf51b6" title="Sprawdza czy spełnia zasady dla martwych punktów " alt="" coords="272,136,495,177"/>
+</map>

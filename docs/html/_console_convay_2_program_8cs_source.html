@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Convay: Plik źródłowy ConsoleConvay/Program.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Convay
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_console_convay_2_program_8cs_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Program.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_console_convay_2_program_8cs.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_convay.html">Convay</a>.<a class="code" href="namespace_convay_1_1_core.html">Core</a>;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_convay.html">Convay</a>.<a class="code" href="namespace_convay_1_1_core.html">Core</a>.<a class="code" href="namespace_convay_1_1_core_1_1_interfaces.html">Interfaces</a>;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.Threading;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.Threading.Tasks;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="namespace_console_convay.html">    7</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_console_convay.html">ConsoleConvay</a></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_console_convay_1_1_program.html">    9</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_console_convay_1_1_program.html">Program</a></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> Main(<span class="keywordtype">string</span>[] args)</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <span class="keywordtype">int</span> width;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            Console.Write(<span class="stringliteral">&quot;Podaj szerokość siatki: &quot;</span>);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <span class="keywordflow">if</span>(!<span class="keywordtype">int</span>.TryParse(Console.ReadLine(), out width))</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                Error(<span class="stringliteral">&quot;zła szerokość&quot;</span>);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            }</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordtype">int</span> height;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            Console.Write(<span class="stringliteral">&quot;Podaj wysokość siatki: &quot;</span>);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">if</span>(!<span class="keywordtype">int</span>.TryParse(Console.ReadLine(), out height))</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                Error(<span class="stringliteral">&quot;zła wysokość&quot;</span>);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            }</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="code" href="interface_convay_1_1_core_1_1_interfaces_1_1_i_rules.html">IRules</a> rules = null;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            Console.Write(<span class="stringliteral">&quot;Podaj zasady: &quot;</span>);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">try</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                rules = <span class="keyword">new</span> <a class="code" href="class_convay_1_1_core_1_1_string_rules.html">StringRules</a>(Console.ReadLine());</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">catch</span> (Exception ex)</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                Error(ex.Message);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            }</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="interface_convay_1_1_core_1_1_interfaces_1_1_i_game.html">IGame</a> game = <span class="keyword">new</span> <a class="code" href="class_convay_1_1_core_1_1_game.html">Game</a>(</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keyword">new</span> <a class="code" href="class_convay_1_1_core_1_1_parallel_engine.html">ParallelEngine</a>(),</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keyword">new</span> <a class="code" href="class_convay_1_1_core_1_1_byte_grid.html">ByteGrid</a>(width, height),</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                rules,</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="keyword">new</span> TimeSpan(0, 0, 0, 0, 100)</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                );</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            game.<a class="code" href="interface_convay_1_1_core_1_1_interfaces_1_1_i_game.html#a782f64a6dd964db6c27752dd9962c1c1">Randomize</a>();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            game.<a class="code" href="interface_convay_1_1_core_1_1_interfaces_1_1_i_game.html#abfec674f941f9534cffa15f6bd5c96b1">GridChanged</a> += WriteGrid;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            Console.Write(<span class="stringliteral">&quot;Naciśnij klawisz by wystartować&quot;</span>);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            Console.ReadKey();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            game.<a class="code" href="interface_convay_1_1_core_1_1_interfaces_1_1_i_game.html#a76cff5d7173fd5c3b7f7959b0e7baa1b">Start</a>();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            Console.ReadKey();</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">void</span> WriteGrid(<span class="keywordtype">object</span> sender, <a class="code" href="class_convay_1_1_core_1_1_grid_changed_event_args.html">GridChangedEventArgs</a> e)</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            Console.Clear();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            Console.WriteLine(e.<a class="code" href="class_convay_1_1_core_1_1_grid_changed_event_args.html#ac9ca2bcbf1c6ab31c34c2b5c93729e4b">Grid</a>);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> Error(<span class="keywordtype">string</span> msg = <span class="stringliteral">&quot;Błąd&quot;</span>)</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        {</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            Console.WriteLine(msg);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            Console.ReadKey();</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div><div class="ttc" id="namespace_convay_1_1_core_1_1_interfaces_html"><div class="ttname"><a href="namespace_convay_1_1_core_1_1_interfaces.html">Convay.Core.Interfaces</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_byte_grid_8cs_source.html#l00007">IByteGrid.cs:7</a></div></div>
+<div class="ttc" id="class_convay_1_1_core_1_1_byte_grid_html"><div class="ttname"><a href="class_convay_1_1_core_1_1_byte_grid.html">Convay.Core.ByteGrid</a></div><div class="ttdoc">Siatka gry w życie oparta na bajtach </div><div class="ttdef"><b>Definition:</b> <a href="_byte_grid_8cs_source.html#l00009">ByteGrid.cs:9</a></div></div>
+<div class="ttc" id="namespace_console_convay_html"><div class="ttname"><a href="namespace_console_convay.html">ConsoleConvay</a></div><div class="ttdef"><b>Definition:</b> <a href="_console_convay_2_program_8cs_source.html#l00007">Program.cs:7</a></div></div>
+<div class="ttc" id="namespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div></div>
+<div class="ttc" id="interface_convay_1_1_core_1_1_interfaces_1_1_i_game_html_abfec674f941f9534cffa15f6bd5c96b1"><div class="ttname"><a href="interface_convay_1_1_core_1_1_interfaces_1_1_i_game.html#abfec674f941f9534cffa15f6bd5c96b1">Convay.Core.Interfaces.IGame.GridChanged</a></div><div class="ttdeci">EventHandler&lt; GridChangedEventArgs &gt; GridChanged</div><div class="ttdoc">Zdarzenie wywoływane po zmianie siatki </div><div class="ttdef"><b>Definition:</b> <a href="_i_game_8cs_source.html#l00013">IGame.cs:13</a></div></div>
+<div class="ttc" id="class_convay_1_1_core_1_1_parallel_engine_html"><div class="ttname"><a href="class_convay_1_1_core_1_1_parallel_engine.html">Convay.Core.ParallelEngine</a></div><div class="ttdoc">Silnik gry w życie pracujący na wielu wątkach </div><div class="ttdef"><b>Definition:</b> <a href="_parallel_engine_8cs_source.html#l00009">ParallelEngine.cs:9</a></div></div>
+<div class="ttc" id="class_convay_1_1_core_1_1_game_html"><div class="ttname"><a href="class_convay_1_1_core_1_1_game.html">Convay.Core.Game</a></div><div class="ttdoc">Klasa automatu komórkowego </div><div class="ttdef"><b>Definition:</b> <a href="_game_8cs_source.html#l00011">Game.cs:11</a></div></div>
+<div class="ttc" id="namespace_convay_html"><div class="ttname"><a href="namespace_convay.html">Convay</a></div></div>
+<div class="ttc" id="interface_convay_1_1_core_1_1_interfaces_1_1_i_game_html_a782f64a6dd964db6c27752dd9962c1c1"><div class="ttname"><a href="interface_convay_1_1_core_1_1_interfaces_1_1_i_game.html#a782f64a6dd964db6c27752dd9962c1c1">Convay.Core.Interfaces.IGame.Randomize</a></div><div class="ttdeci">void Randomize()</div><div class="ttdoc">Losuje siatkę gry </div></div>
+<div class="ttc" id="class_convay_1_1_core_1_1_grid_changed_event_args_html"><div class="ttname"><a href="class_convay_1_1_core_1_1_grid_changed_event_args.html">Convay.Core.GridChangedEventArgs</a></div><div class="ttdef"><b>Definition:</b> <a href="_step_taken_event_args_8cs_source.html#l00006">StepTakenEventArgs.cs:6</a></div></div>
+<div class="ttc" id="class_console_convay_1_1_program_html"><div class="ttname"><a href="class_console_convay_1_1_program.html">ConsoleConvay.Program</a></div><div class="ttdef"><b>Definition:</b> <a href="_console_convay_2_program_8cs_source.html#l00009">Program.cs:9</a></div></div>
+<div class="ttc" id="interface_convay_1_1_core_1_1_interfaces_1_1_i_game_html"><div class="ttname"><a href="interface_convay_1_1_core_1_1_interfaces_1_1_i_game.html">Convay.Core.Interfaces.IGame</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_game_8cs_source.html#l00008">IGame.cs:8</a></div></div>
+<div class="ttc" id="interface_convay_1_1_core_1_1_interfaces_1_1_i_game_html_a76cff5d7173fd5c3b7f7959b0e7baa1b"><div class="ttname"><a href="interface_convay_1_1_core_1_1_interfaces_1_1_i_game.html#a76cff5d7173fd5c3b7f7959b0e7baa1b">Convay.Core.Interfaces.IGame.Start</a></div><div class="ttdeci">void Start()</div><div class="ttdoc">Metoda startująca grę </div></div>
+<div class="ttc" id="namespace_convay_1_1_core_html"><div class="ttname"><a href="namespace_convay_1_1_core.html">Convay.Core</a></div><div class="ttdef"><b>Definition:</b> <a href="_array_grid_8cs_source.html#l00006">ArrayGrid.cs:6</a></div></div>
+<div class="ttc" id="interface_convay_1_1_core_1_1_interfaces_1_1_i_rules_html"><div class="ttname"><a href="interface_convay_1_1_core_1_1_interfaces_1_1_i_rules.html">Convay.Core.Interfaces.IRules</a></div><div class="ttdoc">Interfejs zasad gry w życie </div><div class="ttdef"><b>Definition:</b> <a href="_i_rules_8cs_source.html#l00011">IRules.cs:11</a></div></div>
+<div class="ttc" id="class_convay_1_1_core_1_1_grid_changed_event_args_html_ac9ca2bcbf1c6ab31c34c2b5c93729e4b"><div class="ttname"><a href="class_convay_1_1_core_1_1_grid_changed_event_args.html#ac9ca2bcbf1c6ab31c34c2b5c93729e4b">Convay.Core.GridChangedEventArgs.Grid</a></div><div class="ttdeci">IGrid Grid</div><div class="ttdef"><b>Definition:</b> <a href="_step_taken_event_args_8cs_source.html#l00014">StepTakenEventArgs.cs:14</a></div></div>
+<div class="ttc" id="class_convay_1_1_core_1_1_string_rules_html"><div class="ttname"><a href="class_convay_1_1_core_1_1_string_rules.html">Convay.Core.StringRules</a></div><div class="ttdoc">Zasady gry oparte na standardowym zapisie w ciągu znaków </div><div class="ttdef"><b>Definition:</b> <a href="_string_rules_8cs_source.html#l00013">StringRules.cs:13</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_13311c232714913176559d5178f3e259.html">ConsoleConvay</a></li><li class="navelem"><a class="el" href="_console_convay_2_program_8cs.html">Program.cs</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
+</body>
+</html>

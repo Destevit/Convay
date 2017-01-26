@@ -1,0 +1,293 @@
+\hypertarget{class_convay_1_1_core_1_1_game}{}\section{Dokumentacja klasy Convay.\+Core.\+Game}
+\label{class_convay_1_1_core_1_1_game}\index{Convay.\+Core.\+Game@{Convay.\+Core.\+Game}}
+
+
+Klasa automatu komórkowego  
+
+
+
+
+Diagram dziedziczenia dla Convay.\+Core.\+Game
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_convay_1_1_core_1_1_game__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Convay.\+Core.\+Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_convay_1_1_core_1_1_game__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_convay_1_1_core_1_1_game_a6a97d86b561918a025ea1df73c86eee0}{Game} (\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine}{I\+Engine} engine, \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} grid, \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules}{I\+Rules} rules, Time\+Span interval)
+\begin{DoxyCompactList}\small\item\em Konstruuje grę \end{DoxyCompactList}\item 
+async void \hyperlink{class_convay_1_1_core_1_1_game_a34947ec8157eabc9eba8d5d8fd116f42}{Start} ()
+\begin{DoxyCompactList}\small\item\em Metoda startująca grę \end{DoxyCompactList}\item 
+void \hyperlink{class_convay_1_1_core_1_1_game_a1f0547dcd642f826756cb94f0a6f907f}{Stop} ()
+\begin{DoxyCompactList}\small\item\em Metoda zatrzymująca grę \end{DoxyCompactList}\item 
+void \hyperlink{class_convay_1_1_core_1_1_game_a59b58207976ef30b82932d1196806c8f}{Randomize} ()
+\begin{DoxyCompactList}\small\item\em Losuje siatkę gry \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Właściwości}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_convay_1_1_core_1_1_game_ac770d7f2afda52d82efcc0882463de6d}{Is\+Running}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Właściwość która zwraca informację, czy gra jest uruchomiona \end{DoxyCompactList}\item 
+\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules}{I\+Rules} \hyperlink{class_convay_1_1_core_1_1_game_a414e7d9f72590cd7523edecc50df15da}{Rules}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Właściwość z zasadami gry \end{DoxyCompactList}\item 
+\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} \hyperlink{class_convay_1_1_core_1_1_game_a079870860cd4f61916e99b839750e520}{Grid}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Właściwość zwracająca/ustawiająca wewnętrzną siatkę silnika \end{DoxyCompactList}\item 
+Time\+Span \hyperlink{class_convay_1_1_core_1_1_game_aafac64f23595335c918fa666223482c8}{Interval}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Interwał pomiędzy krokami gry \end{DoxyCompactList}\item 
+\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine}{I\+Engine} \hyperlink{class_convay_1_1_core_1_1_game_a93fe3cfaff73c2e0378d78c3701ead38}{Engine}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Właściwość z silnikiem gry \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Zdarzenia}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Handler$<$ \hyperlink{class_convay_1_1_core_1_1_rules_changed_event_args}{Rules\+Changed\+Event\+Args} $>$ \hyperlink{class_convay_1_1_core_1_1_game_a505038e37e1687fafcf5f304254e18db}{Rules\+Changed}
+\begin{DoxyCompactList}\small\item\em Zdarzenie wywoływane po zmianie zasad \end{DoxyCompactList}\item 
+Event\+Handler$<$ \hyperlink{class_convay_1_1_core_1_1_grid_changed_event_args}{Grid\+Changed\+Event\+Args} $>$ \hyperlink{class_convay_1_1_core_1_1_game_ae2338714ffd4c5ff33dd8a67e0d7d573}{Grid\+Changed}
+\begin{DoxyCompactList}\small\item\em Zdarzenie wywoływane po zmianie siatki \end{DoxyCompactList}\item 
+Event\+Handler$<$ bool $>$ \hyperlink{class_convay_1_1_core_1_1_game_ab88c319349721a3a8e2a4e17ef2d60e6}{Game\+State\+Changed}
+\begin{DoxyCompactList}\small\item\em Zdarzenie wywoływane po zmianie stanu gry \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa automatu komórkowego 
+
+
+
+Definicja w linii 11 pliku Game.\+cs.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_convay_1_1_core_1_1_game_a6a97d86b561918a025ea1df73c86eee0}{}\label{class_convay_1_1_core_1_1_game_a6a97d86b561918a025ea1df73c86eee0} 
+\index{Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}!Game@{Game}}
+\index{Game@{Game}!Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}}
+\subsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Convay.\+Core.\+Game.\+Game (\begin{DoxyParamCaption}\item[{\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine}{I\+Engine}}]{engine,  }\item[{\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid}}]{grid,  }\item[{\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules}{I\+Rules}}]{rules,  }\item[{Time\+Span}]{interval }\end{DoxyParamCaption})}
+
+
+
+Konstruuje grę 
+
+
+\begin{DoxyParams}{Parametry}
+{\em engine} & instancja silnika\\
+\hline
+{\em grid} & instancja siatki\\
+\hline
+{\em rules} & instancja zasad\\
+\hline
+{\em interval} & interwał pomiędzy krokami\\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 42 pliku Game.\+cs.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_convay_1_1_core_1_1_game_a59b58207976ef30b82932d1196806c8f}{}\label{class_convay_1_1_core_1_1_game_a59b58207976ef30b82932d1196806c8f} 
+\index{Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}!Randomize@{Randomize}}
+\index{Randomize@{Randomize}!Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}}
+\subsubsection{\texorpdfstring{Randomize()}{Randomize()}}
+{\footnotesize\ttfamily void Convay.\+Core.\+Game.\+Randomize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Losuje siatkę gry 
+
+
+
+Implementuje \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_game_a782f64a6dd964db6c27752dd9962c1c1}{Convay.\+Core.\+Interfaces.\+I\+Game}.
+
+
+
+Definicja w linii 183 pliku Game.\+cs.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_convay_1_1_core_1_1_game_a59b58207976ef30b82932d1196806c8f_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{class_convay_1_1_core_1_1_game_a34947ec8157eabc9eba8d5d8fd116f42}{}\label{class_convay_1_1_core_1_1_game_a34947ec8157eabc9eba8d5d8fd116f42} 
+\index{Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}!Start@{Start}}
+\index{Start@{Start}!Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily async void Convay.\+Core.\+Game.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda startująca grę 
+
+
+
+Implementuje \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_game_a76cff5d7173fd5c3b7f7959b0e7baa1b}{Convay.\+Core.\+Interfaces.\+I\+Game}.
+
+
+
+Definicja w linii 149 pliku Game.\+cs.
+
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_convay_1_1_core_1_1_game_a34947ec8157eabc9eba8d5d8fd116f42_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{class_convay_1_1_core_1_1_game_a1f0547dcd642f826756cb94f0a6f907f}{}\label{class_convay_1_1_core_1_1_game_a1f0547dcd642f826756cb94f0a6f907f} 
+\index{Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}!Stop@{Stop}}
+\index{Stop@{Stop}!Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}}
+\subsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void Convay.\+Core.\+Game.\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zatrzymująca grę 
+
+
+
+Implementuje \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_game_a2dec82cc222354ba16ecfa30a0158cac}{Convay.\+Core.\+Interfaces.\+I\+Game}.
+
+
+
+Definicja w linii 174 pliku Game.\+cs.
+
+
+
+\subsection{Dokumentacja właściwości}
+\hypertarget{class_convay_1_1_core_1_1_game_a93fe3cfaff73c2e0378d78c3701ead38}{}\label{class_convay_1_1_core_1_1_game_a93fe3cfaff73c2e0378d78c3701ead38} 
+\index{Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}!Engine@{Engine}}
+\index{Engine@{Engine}!Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}}
+\subsubsection{\texorpdfstring{Engine}{Engine}}
+{\footnotesize\ttfamily \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine}{I\+Engine} Convay.\+Core.\+Game.\+Engine\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Właściwość z silnikiem gry 
+
+
+
+Definicja w linii 116 pliku Game.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_game_a079870860cd4f61916e99b839750e520}{}\label{class_convay_1_1_core_1_1_game_a079870860cd4f61916e99b839750e520} 
+\index{Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}!Grid@{Grid}}
+\index{Grid@{Grid}!Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}}
+\subsubsection{\texorpdfstring{Grid}{Grid}}
+{\footnotesize\ttfamily \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} Convay.\+Core.\+Game.\+Grid\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Właściwość zwracająca/ustawiająca wewnętrzną siatkę silnika 
+
+
+
+Definicja w linii 75 pliku Game.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_game_aafac64f23595335c918fa666223482c8}{}\label{class_convay_1_1_core_1_1_game_aafac64f23595335c918fa666223482c8} 
+\index{Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}!Interval@{Interval}}
+\index{Interval@{Interval}!Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}}
+\subsubsection{\texorpdfstring{Interval}{Interval}}
+{\footnotesize\ttfamily Time\+Span Convay.\+Core.\+Game.\+Interval\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Interwał pomiędzy krokami gry 
+
+
+
+Definicja w linii 96 pliku Game.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_game_ac770d7f2afda52d82efcc0882463de6d}{}\label{class_convay_1_1_core_1_1_game_ac770d7f2afda52d82efcc0882463de6d} 
+\index{Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}!Is\+Running@{Is\+Running}}
+\index{Is\+Running@{Is\+Running}!Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}}
+\subsubsection{\texorpdfstring{Is\+Running}{IsRunning}}
+{\footnotesize\ttfamily bool Convay.\+Core.\+Game.\+Is\+Running\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Właściwość która zwraca informację, czy gra jest uruchomiona 
+
+
+
+Definicja w linii 23 pliku Game.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_game_a414e7d9f72590cd7523edecc50df15da}{}\label{class_convay_1_1_core_1_1_game_a414e7d9f72590cd7523edecc50df15da} 
+\index{Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}!Rules@{Rules}}
+\index{Rules@{Rules}!Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}}
+\subsubsection{\texorpdfstring{Rules}{Rules}}
+{\footnotesize\ttfamily \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules}{I\+Rules} Convay.\+Core.\+Game.\+Rules\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Właściwość z zasadami gry 
+
+
+
+Definicja w linii 54 pliku Game.\+cs.
+
+
+
+\subsection{Dokumentacja zdarzeń}
+\hypertarget{class_convay_1_1_core_1_1_game_ab88c319349721a3a8e2a4e17ef2d60e6}{}\label{class_convay_1_1_core_1_1_game_ab88c319349721a3a8e2a4e17ef2d60e6} 
+\index{Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}!Game\+State\+Changed@{Game\+State\+Changed}}
+\index{Game\+State\+Changed@{Game\+State\+Changed}!Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}}
+\subsubsection{\texorpdfstring{Game\+State\+Changed}{GameStateChanged}}
+{\footnotesize\ttfamily Event\+Handler$<$bool$>$ Convay.\+Core.\+Game.\+Game\+State\+Changed}
+
+
+
+Zdarzenie wywoływane po zmianie stanu gry 
+
+
+
+Definicja w linii 144 pliku Game.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_game_ae2338714ffd4c5ff33dd8a67e0d7d573}{}\label{class_convay_1_1_core_1_1_game_ae2338714ffd4c5ff33dd8a67e0d7d573} 
+\index{Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}!Grid\+Changed@{Grid\+Changed}}
+\index{Grid\+Changed@{Grid\+Changed}!Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}}
+\subsubsection{\texorpdfstring{Grid\+Changed}{GridChanged}}
+{\footnotesize\ttfamily Event\+Handler$<$\hyperlink{class_convay_1_1_core_1_1_grid_changed_event_args}{Grid\+Changed\+Event\+Args}$>$ Convay.\+Core.\+Game.\+Grid\+Changed}
+
+
+
+Zdarzenie wywoływane po zmianie siatki 
+
+
+
+Definicja w linii 139 pliku Game.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_game_a505038e37e1687fafcf5f304254e18db}{}\label{class_convay_1_1_core_1_1_game_a505038e37e1687fafcf5f304254e18db} 
+\index{Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}!Rules\+Changed@{Rules\+Changed}}
+\index{Rules\+Changed@{Rules\+Changed}!Convay\+::\+Core\+::\+Game@{Convay\+::\+Core\+::\+Game}}
+\subsubsection{\texorpdfstring{Rules\+Changed}{RulesChanged}}
+{\footnotesize\ttfamily Event\+Handler$<$\hyperlink{class_convay_1_1_core_1_1_rules_changed_event_args}{Rules\+Changed\+Event\+Args}$>$ Convay.\+Core.\+Game.\+Rules\+Changed}
+
+
+
+Zdarzenie wywoływane po zmianie zasad 
+
+
+
+Definicja w linii 135 pliku Game.\+cs.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Convay/\hyperlink{_game_8cs}{Game.\+cs}\end{DoxyCompactItemize}

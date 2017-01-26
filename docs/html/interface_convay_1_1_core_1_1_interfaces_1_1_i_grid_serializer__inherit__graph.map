@@ -1,0 +1,4 @@
+<map id="Convay.Core.Interfaces.IGridSerializer" name="Convay.Core.Interfaces.IGridSerializer">
+<area shape="rect" id="node2" href="$class_convay_1_1_core_1_1_grid_serializer.html" title="Serializuje pliki do formatu .glg &#45; siatka zapisana jako ciąg bitów " alt="" coords="5,102,200,129"/>
+<area shape="rect" id="node3" href="$class_convay_1_1_win_extension_1_1_bitmap_serializer.html" title="Serializuje pliki do formatu bitmapy " alt="" coords="225,95,439,136"/>
+</map>

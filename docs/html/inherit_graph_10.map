@@ -1,0 +1,5 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$interface_convay_1_1_win_extension_1_1_i_visualizer.html" title="Interfejs wizualizacji siatki " alt="" coords="5,46,240,73"/>
+<area shape="rect" id="node2" href="$class_convay_1_1_win_extension_1_1_safe_visualizer.html" title="Wizualizator siatki z kodem zarządzanym " alt="" coords="296,5,493,47"/>
+<area shape="rect" id="node3" href="$class_convay_1_1_win_extension_1_1_unsafe_visualizer.html" title="Wizualizator wykorzystujący kod niezarządazny, operuje na wskaźnikach " alt="" coords="288,71,501,112"/>
+</map>

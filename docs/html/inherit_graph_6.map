@@ -1,0 +1,5 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_serializer.html" title="Convay.Core.Interfaces.IGrid\lSerializer" alt="" coords="5,27,215,69"/>
+<area shape="rect" id="node2" href="$class_convay_1_1_core_1_1_grid_serializer.html" title="Serializuje pliki do formatu .glg &#45; siatka zapisana jako ciąg bitów " alt="" coords="273,5,467,32"/>
+<area shape="rect" id="node3" href="$class_convay_1_1_win_extension_1_1_bitmap_serializer.html" title="Serializuje pliki do formatu bitmapy " alt="" coords="263,57,477,98"/>
+</map>

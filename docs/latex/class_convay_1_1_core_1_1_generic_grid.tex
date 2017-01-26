@@ -1,0 +1,140 @@
+\hypertarget{class_convay_1_1_core_1_1_generic_grid}{}\section{Dokumentacja szablonu klasy Convay.\+Core.\+Generic\+Grid$<$ T $>$}
+\label{class_convay_1_1_core_1_1_generic_grid}\index{Convay.\+Core.\+Generic\+Grid$<$ T $>$@{Convay.\+Core.\+Generic\+Grid$<$ T $>$}}
+
+
+Generyczna siatka gry w życie  
+
+
+
+
+Diagram dziedziczenia dla Convay.\+Core.\+Generic\+Grid$<$ T $>$
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{class_convay_1_1_core_1_1_generic_grid__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Convay.\+Core.\+Generic\+Grid$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{class_convay_1_1_core_1_1_generic_grid__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_convay_1_1_core_1_1_generic_grid_a3507e1f2a0efa825457ad47b6c4121b2}{Generic\+Grid} (int x\+Size, int y\+Size)
+\item 
+override \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} \hyperlink{class_convay_1_1_core_1_1_generic_grid_af2556688d2c1a33797ce8f79d15836b4}{Clone} ()
+\begin{DoxyCompactList}\small\item\em Zwraca kopię siatki \end{DoxyCompactList}\item 
+override void \hyperlink{class_convay_1_1_core_1_1_generic_grid_a5d39ff67bb67b6a70455ecd61fc1a0ef}{Initialize} (int x\+Size, int y\+Size)
+\begin{DoxyCompactList}\small\item\em Ustawia pustą siatkę o zadanej wielkości \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Właściwości}
+\begin{DoxyCompactItemize}
+\item 
+override bool \hyperlink{class_convay_1_1_core_1_1_generic_grid_aa87f9cbce32d294ecfd66a36e7b38152}{this\mbox{[}int x\+Coordinate, int y\+Coordinate\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\subsection{Opis szczegółowy}
+Generyczna siatka gry w życie 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Typ punktów używany przez siatkę\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Więzy typów]\begin{description}
+\item[{\em T} : {\em I\+Point}]\item[{\em T} : {\em new()}]\end{description}
+\end{Desc}
+
+
+Definicja w linii 13 pliku Generic\+Grid.\+cs.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_convay_1_1_core_1_1_generic_grid_a3507e1f2a0efa825457ad47b6c4121b2}{}\label{class_convay_1_1_core_1_1_generic_grid_a3507e1f2a0efa825457ad47b6c4121b2} 
+\index{Convay\+::\+Core\+::\+Generic\+Grid@{Convay\+::\+Core\+::\+Generic\+Grid}!Generic\+Grid@{Generic\+Grid}}
+\index{Generic\+Grid@{Generic\+Grid}!Convay\+::\+Core\+::\+Generic\+Grid@{Convay\+::\+Core\+::\+Generic\+Grid}}
+\subsubsection{\texorpdfstring{Generic\+Grid()}{GenericGrid()}}
+{\footnotesize\ttfamily \hyperlink{class_convay_1_1_core_1_1_generic_grid}{Convay.\+Core.\+Generic\+Grid}$<$ T $>$.\hyperlink{class_convay_1_1_core_1_1_generic_grid}{Generic\+Grid} (\begin{DoxyParamCaption}\item[{int}]{x\+Size,  }\item[{int}]{y\+Size }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 15 pliku Generic\+Grid.\+cs.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_convay_1_1_core_1_1_generic_grid_af2556688d2c1a33797ce8f79d15836b4}{}\label{class_convay_1_1_core_1_1_generic_grid_af2556688d2c1a33797ce8f79d15836b4} 
+\index{Convay\+::\+Core\+::\+Generic\+Grid@{Convay\+::\+Core\+::\+Generic\+Grid}!Clone@{Clone}}
+\index{Clone@{Clone}!Convay\+::\+Core\+::\+Generic\+Grid@{Convay\+::\+Core\+::\+Generic\+Grid}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily override \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} \hyperlink{class_convay_1_1_core_1_1_generic_grid}{Convay.\+Core.\+Generic\+Grid}$<$ T $>$.Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Zwraca kopię siatki 
+
+\begin{DoxyReturn}{Zwraca}
+kopia siatki
+\end{DoxyReturn}
+
+
+Implementuje \hyperlink{class_convay_1_1_core_1_1_array_grid_a139eba7f8a6780b4ecbc446959e159ad}{Convay.\+Core.\+Array\+Grid$<$ T $>$}.
+
+
+
+Definicja w linii 35 pliku Generic\+Grid.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_generic_grid_a5d39ff67bb67b6a70455ecd61fc1a0ef}{}\label{class_convay_1_1_core_1_1_generic_grid_a5d39ff67bb67b6a70455ecd61fc1a0ef} 
+\index{Convay\+::\+Core\+::\+Generic\+Grid@{Convay\+::\+Core\+::\+Generic\+Grid}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Convay\+::\+Core\+::\+Generic\+Grid@{Convay\+::\+Core\+::\+Generic\+Grid}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily override void \hyperlink{class_convay_1_1_core_1_1_generic_grid}{Convay.\+Core.\+Generic\+Grid}$<$ T $>$.Initialize (\begin{DoxyParamCaption}\item[{int}]{x\+Size,  }\item[{int}]{y\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Ustawia pustą siatkę o zadanej wielkości 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x\+Size} & Szerokość\\
+\hline
+{\em y\+Size} & Wysokość\\
+\hline
+\end{DoxyParams}
+
+
+Implementuje \hyperlink{class_convay_1_1_core_1_1_array_grid_a49501f55af9f747ed75cb94563b6d641}{Convay.\+Core.\+Array\+Grid$<$ T $>$}.
+
+
+
+Definicja w linii 50 pliku Generic\+Grid.\+cs.
+
+
+
+\subsection{Dokumentacja właściwości}
+\hypertarget{class_convay_1_1_core_1_1_generic_grid_aa87f9cbce32d294ecfd66a36e7b38152}{}\label{class_convay_1_1_core_1_1_generic_grid_aa87f9cbce32d294ecfd66a36e7b38152} 
+\index{Convay\+::\+Core\+::\+Generic\+Grid@{Convay\+::\+Core\+::\+Generic\+Grid}!this\mbox{[}int x\+Coordinate, int y\+Coordinate\mbox{]}@{this[int x\+Coordinate, int y\+Coordinate]}}
+\index{this\mbox{[}int x\+Coordinate, int y\+Coordinate\mbox{]}@{this[int x\+Coordinate, int y\+Coordinate]}!Convay\+::\+Core\+::\+Generic\+Grid@{Convay\+::\+Core\+::\+Generic\+Grid}}
+\subsubsection{\texorpdfstring{this[int x\+Coordinate, int y\+Coordinate]}{this[int xCoordinate, int yCoordinate]}}
+{\footnotesize\ttfamily override bool \hyperlink{class_convay_1_1_core_1_1_generic_grid}{Convay.\+Core.\+Generic\+Grid}$<$ T $>$.this\mbox{[}int x\+Coordinate, int y\+Coordinate\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definicja w linii 20 pliku Generic\+Grid.\+cs.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Convay/\hyperlink{_generic_grid_8cs}{Generic\+Grid.\+cs}\end{DoxyCompactItemize}

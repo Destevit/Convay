@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Convay: Plik źródłowy WinExtension/SafeVisualizer.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Convay
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_safe_visualizer_8cs_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SafeVisualizer.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_safe_visualizer_8cs.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.Drawing;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_convay.html">Convay</a>.<a class="code" href="namespace_convay_1_1_core.html">Core</a>.<a class="code" href="namespace_convay_1_1_core_1_1_interfaces.html">Interfaces</a>;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.Drawing.Imaging;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_convay.html">Convay</a>.WinExtension</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_convay_1_1_win_extension_1_1_safe_visualizer.html">   10</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_convay_1_1_win_extension_1_1_safe_visualizer.html">SafeVisualizer</a> : <a class="code" href="interface_convay_1_1_win_extension_1_1_i_visualizer.html">IVisualizer</a></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_convay_1_1_win_extension_1_1_safe_visualizer.html#a7731cc119c43b9c71c354bdc9053922d">   19</a></span>&#160;        <span class="keyword">public</span> Bitmap <a class="code" href="class_convay_1_1_win_extension_1_1_safe_visualizer.html#a7731cc119c43b9c71c354bdc9053922d">ToBitmap</a>(<a class="code" href="interface_convay_1_1_core_1_1_interfaces_1_1_i_grid.html">IGrid</a> grid, Color livingColor, Color deadColor)</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordtype">int</span> width = grid.<a class="code" href="interface_convay_1_1_core_1_1_interfaces_1_1_i_grid.html#a1e8b553ad4216cc871e5ba22518cafdb">XSize</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordtype">int</span> height = grid.<a class="code" href="interface_convay_1_1_core_1_1_interfaces_1_1_i_grid.html#a049f4b262c16e04b2bd4e83c2c30deac">YSize</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            Bitmap bitmap = <span class="keyword">new</span> Bitmap(width, height, PixelFormat.Format32bppArgb);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            Color colorToSet;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; height; y++)</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; width; x++)</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                    <span class="keywordflow">if</span> (grid[x, y])</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                        colorToSet = livingColor;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                    <span class="keywordflow">else</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                        colorToSet = deadColor;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                    bitmap.SetPixel(x, y, colorToSet);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                }</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            }</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">return</span> bitmap;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div><div class="ttc" id="interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_html_a049f4b262c16e04b2bd4e83c2c30deac"><div class="ttname"><a href="interface_convay_1_1_core_1_1_interfaces_1_1_i_grid.html#a049f4b262c16e04b2bd4e83c2c30deac">Convay.Core.Interfaces.IGrid.YSize</a></div><div class="ttdeci">int YSize</div><div class="ttdoc">Zwraca wysokość siatki </div><div class="ttdef"><b>Definition:</b> <a href="_i_grid_8cs_source.html#l00029">IGrid.cs:29</a></div></div>
+<div class="ttc" id="namespace_convay_1_1_core_1_1_interfaces_html"><div class="ttname"><a href="namespace_convay_1_1_core_1_1_interfaces.html">Convay.Core.Interfaces</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_byte_grid_8cs_source.html#l00007">IByteGrid.cs:7</a></div></div>
+<div class="ttc" id="interface_convay_1_1_win_extension_1_1_i_visualizer_html"><div class="ttname"><a href="interface_convay_1_1_win_extension_1_1_i_visualizer.html">Convay.WinExtension.IVisualizer</a></div><div class="ttdoc">Interfejs wizualizacji siatki </div><div class="ttdef"><b>Definition:</b> <a href="_i_visualizer_8cs_source.html#l00015">IVisualizer.cs:15</a></div></div>
+<div class="ttc" id="namespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div></div>
+<div class="ttc" id="class_convay_1_1_win_extension_1_1_safe_visualizer_html"><div class="ttname"><a href="class_convay_1_1_win_extension_1_1_safe_visualizer.html">Convay.WinExtension.SafeVisualizer</a></div><div class="ttdoc">Wizualizator siatki z kodem zarządzanym </div><div class="ttdef"><b>Definition:</b> <a href="_safe_visualizer_8cs_source.html#l00010">SafeVisualizer.cs:10</a></div></div>
+<div class="ttc" id="namespace_convay_html"><div class="ttname"><a href="namespace_convay.html">Convay</a></div></div>
+<div class="ttc" id="class_convay_1_1_win_extension_1_1_safe_visualizer_html_a7731cc119c43b9c71c354bdc9053922d"><div class="ttname"><a href="class_convay_1_1_win_extension_1_1_safe_visualizer.html#a7731cc119c43b9c71c354bdc9053922d">Convay.WinExtension.SafeVisualizer.ToBitmap</a></div><div class="ttdeci">Bitmap ToBitmap(IGrid grid, Color livingColor, Color deadColor)</div><div class="ttdoc">Konwertuje siatkę na bitmapę </div><div class="ttdef"><b>Definition:</b> <a href="_safe_visualizer_8cs_source.html#l00019">SafeVisualizer.cs:19</a></div></div>
+<div class="ttc" id="interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_html"><div class="ttname"><a href="interface_convay_1_1_core_1_1_interfaces_1_1_i_grid.html">Convay.Core.Interfaces.IGrid</a></div><div class="ttdoc">Interfejs siatki gry w życie </div><div class="ttdef"><b>Definition:</b> <a href="_i_grid_8cs_source.html#l00011">IGrid.cs:11</a></div></div>
+<div class="ttc" id="namespace_convay_1_1_core_html"><div class="ttname"><a href="namespace_convay_1_1_core.html">Convay.Core</a></div><div class="ttdef"><b>Definition:</b> <a href="_array_grid_8cs_source.html#l00006">ArrayGrid.cs:6</a></div></div>
+<div class="ttc" id="interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_html_a1e8b553ad4216cc871e5ba22518cafdb"><div class="ttname"><a href="interface_convay_1_1_core_1_1_interfaces_1_1_i_grid.html#a1e8b553ad4216cc871e5ba22518cafdb">Convay.Core.Interfaces.IGrid.XSize</a></div><div class="ttdeci">int XSize</div><div class="ttdoc">Zwraca szerokość siatki </div><div class="ttdef"><b>Definition:</b> <a href="_i_grid_8cs_source.html#l00024">IGrid.cs:24</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_c6fda3360b8c22a88ebeebbc80e7435a.html">WinExtension</a></li><li class="navelem"><a class="el" href="_safe_visualizer_8cs.html">SafeVisualizer.cs</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
+</body>
+</html>

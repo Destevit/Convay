@@ -1,0 +1,108 @@
+\hypertarget{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine}{}\section{Dokumentacja interfejsu Convay.\+Core.\+Interfaces.\+I\+Engine}
+\label{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine}\index{Convay.\+Core.\+Interfaces.\+I\+Engine@{Convay.\+Core.\+Interfaces.\+I\+Engine}}
+
+
+Interfejs silnika gry w życie  
+
+
+
+
+Diagram dziedziczenia dla Convay.\+Core.\+Interfaces.\+I\+Engine
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine_a0796a83275b1ec955e3f3f82d0a51a3d}{Count\+Alive\+Neighbours} (\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} grid, int x\+Coordinate, int y\+Coordinate)
+\begin{DoxyCompactList}\small\item\em Zlicza żywych sąsiadów punktu \end{DoxyCompactList}\item 
+int \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine_a4c04381822239d478438ee7012acf9ca}{Count\+Dead\+Neighbours} (\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} grid, int x\+Coordinate, int y\+Coordinate)
+\begin{DoxyCompactList}\small\item\em Zlicza martwych sąsiadów punktu \end{DoxyCompactList}\item 
+\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine_a58f031ed5f145506e9dd1e6067c683a5}{Take\+Step} (\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} grid, \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules}{I\+Rules} rules)
+\begin{DoxyCompactList}\small\item\em Wykonuje jeden krok gry \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Interfejs silnika gry w życie 
+
+
+
+Definicja w linii 8 pliku I\+Engine.\+cs.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine_a0796a83275b1ec955e3f3f82d0a51a3d}{}\label{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine_a0796a83275b1ec955e3f3f82d0a51a3d} 
+\index{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Engine@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Engine}!Count\+Alive\+Neighbours@{Count\+Alive\+Neighbours}}
+\index{Count\+Alive\+Neighbours@{Count\+Alive\+Neighbours}!Convay\+::\+Core\+::\+Interfaces\+::\+I\+Engine@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Engine}}
+\subsubsection{\texorpdfstring{Count\+Alive\+Neighbours()}{CountAliveNeighbours()}}
+{\footnotesize\ttfamily int Convay.\+Core.\+Interfaces.\+I\+Engine.\+Count\+Alive\+Neighbours (\begin{DoxyParamCaption}\item[{\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid}}]{grid,  }\item[{int}]{x\+Coordinate,  }\item[{int}]{y\+Coordinate }\end{DoxyParamCaption})}
+
+
+
+Zlicza żywych sąsiadów punktu 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x\+Coordinate} & Współrzędna x\\
+\hline
+{\em y\+Coordinate} & Współrzędna y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+liczba żywych sąsiadów
+\end{DoxyReturn}
+
+
+Implementowany w \hyperlink{class_convay_1_1_core_1_1_engine_af5d8b7993421d67c3fc6ba702521a7cd}{Convay.\+Core.\+Engine}.
+
+\hypertarget{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine_a4c04381822239d478438ee7012acf9ca}{}\label{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine_a4c04381822239d478438ee7012acf9ca} 
+\index{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Engine@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Engine}!Count\+Dead\+Neighbours@{Count\+Dead\+Neighbours}}
+\index{Count\+Dead\+Neighbours@{Count\+Dead\+Neighbours}!Convay\+::\+Core\+::\+Interfaces\+::\+I\+Engine@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Engine}}
+\subsubsection{\texorpdfstring{Count\+Dead\+Neighbours()}{CountDeadNeighbours()}}
+{\footnotesize\ttfamily int Convay.\+Core.\+Interfaces.\+I\+Engine.\+Count\+Dead\+Neighbours (\begin{DoxyParamCaption}\item[{\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid}}]{grid,  }\item[{int}]{x\+Coordinate,  }\item[{int}]{y\+Coordinate }\end{DoxyParamCaption})}
+
+
+
+Zlicza martwych sąsiadów punktu 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x\+Coordinate} & Współrzędna x\\
+\hline
+{\em y\+Coordinate} & Współrzędna y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+liczba martwych sąsiadów
+\end{DoxyReturn}
+
+
+Implementowany w \hyperlink{class_convay_1_1_core_1_1_engine_a51ab6b04c07f0803751d8013b422cc3d}{Convay.\+Core.\+Engine}.
+
+\hypertarget{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine_a58f031ed5f145506e9dd1e6067c683a5}{}\label{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine_a58f031ed5f145506e9dd1e6067c683a5} 
+\index{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Engine@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Engine}!Take\+Step@{Take\+Step}}
+\index{Take\+Step@{Take\+Step}!Convay\+::\+Core\+::\+Interfaces\+::\+I\+Engine@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Engine}}
+\subsubsection{\texorpdfstring{Take\+Step()}{TakeStep()}}
+{\footnotesize\ttfamily \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} Convay.\+Core.\+Interfaces.\+I\+Engine.\+Take\+Step (\begin{DoxyParamCaption}\item[{\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid}}]{grid,  }\item[{\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules}{I\+Rules}}]{rules }\end{DoxyParamCaption})}
+
+
+
+Wykonuje jeden krok gry 
+
+\begin{DoxyReturn}{Zwraca}
+Siatka po wykonaniu kroku
+\end{DoxyReturn}
+
+
+Implementowany w \hyperlink{class_convay_1_1_core_1_1_engine_a02713f5cb5242a65d2e1816512e0b791}{Convay.\+Core.\+Engine} i \hyperlink{class_convay_1_1_core_1_1_parallel_engine_a32e4a4911dcbb74f555b99944940d921}{Convay.\+Core.\+Parallel\+Engine}.
+
+
+
+Dokumentacja dla tego interfejsu została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Convay/\+Interfaces/\hyperlink{_i_engine_8cs}{I\+Engine.\+cs}\end{DoxyCompactItemize}

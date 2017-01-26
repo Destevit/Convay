@@ -1,0 +1,362 @@
+\hypertarget{class_convay_1_1_core_1_1_array_grid}{}\section{Dokumentacja szablonu klasy Convay.\+Core.\+Array\+Grid$<$ T $>$}
+\label{class_convay_1_1_core_1_1_array_grid}\index{Convay.\+Core.\+Array\+Grid$<$ T $>$@{Convay.\+Core.\+Array\+Grid$<$ T $>$}}
+
+
+Siatka gry w życie oparta na tablicy  
+
+
+
+
+Diagram dziedziczenia dla Convay.\+Core.\+Array\+Grid$<$ T $>$
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_convay_1_1_core_1_1_array_grid__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Convay.\+Core.\+Array\+Grid$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_convay_1_1_core_1_1_array_grid__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_convay_1_1_core_1_1_array_grid_af958573a897054ae4a946795082b3d5e}{Array\+Grid} (int x\+Size, int y\+Size)
+\begin{DoxyCompactList}\small\item\em Konstruuje siatkę o zadanej wielkości \end{DoxyCompactList}\item 
+virtual T \hyperlink{class_convay_1_1_core_1_1_array_grid_a9c0d58bccaf8fec674219fbcc8295e95}{Get\+Point} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Umożliwia dostęp do punktu o zadanych współrzędnych \end{DoxyCompactList}\item 
+abstract \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} \hyperlink{class_convay_1_1_core_1_1_array_grid_a139eba7f8a6780b4ecbc446959e159ad}{Clone} ()
+\begin{DoxyCompactList}\small\item\em Zwraca kopię siatki \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_convay_1_1_core_1_1_array_grid_a90fc10f845bf94f334079751fc9c1cba}{Exist} (int x\+Coordinate, int y\+Coordinate)
+\begin{DoxyCompactList}\small\item\em Określa istnienie punktu o zadanych współrzędnych w siatce \end{DoxyCompactList}\item 
+abstract void \hyperlink{class_convay_1_1_core_1_1_array_grid_a49501f55af9f747ed75cb94563b6d641}{Initialize} (int x\+Size, int y\+Size)
+\begin{DoxyCompactList}\small\item\em Ustawia pustą siatkę o zadanej wielkości \end{DoxyCompactList}\item 
+override string \hyperlink{class_convay_1_1_core_1_1_array_grid_a8f64f748e08f32c2bf04ac1ec97f3e82}{To\+String} ()
+\begin{DoxyCompactList}\small\item\em Konwertuje siatkę na string, gdzie elementy żywe i martwe oznaczone są odpowiednio znakiem F\+U\+L\+L\+B\+L\+O\+CK lub spacji \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_convay_1_1_core_1_1_array_grid_a0a40a1e8519368ecfcb1e1467a53e513}{Randomize} ()
+\begin{DoxyCompactList}\small\item\em Losuje punkty siatki \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{class_convay_1_1_core_1_1_array_grid_a4850c93797b02a67509f068bb3c2b0c0}{X\+Size} =$>$ point\+Array.\+Get\+Length(0)
+\begin{DoxyCompactList}\small\item\em Zwraca szerokość siatki \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_convay_1_1_core_1_1_array_grid_a315d51b878cb8952f0578cffd13546bd}{Y\+Size} =$>$ point\+Array.\+Get\+Length(1)
+\begin{DoxyCompactList}\small\item\em Zwraca wysokość siatki \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+Argument\+Out\+Of\+Range\+Exception \hyperlink{class_convay_1_1_core_1_1_array_grid_a3d6803d7c51929e3a26c57a7f0dc87e1}{new\+Argument\+Out\+Of\+Range\+Exception} ()
+\begin{DoxyCompactList}\small\item\em Zwraca wyjątek z wiadomością o przekroczeniu wymiarów siatki \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+Resource\+Manager \hyperlink{class_convay_1_1_core_1_1_array_grid_a5abe9f109182c5fa7754db9c0b1fc58f}{exception\+Resource} = new Resource\+Manager(typeof(\hyperlink{class_convay_1_1_core_1_1_exception_messages}{Exception\+Messages}))
+\begin{DoxyCompactList}\small\item\em Zasób z tekstami wyjątków \end{DoxyCompactList}\item 
+Random \hyperlink{class_convay_1_1_core_1_1_array_grid_ae591bc179fd709c4d73eeb899a973d19}{random\+Generator} = new Random()
+\begin{DoxyCompactList}\small\item\em Generator liczb pseudolosowych \end{DoxyCompactList}\item 
+T \mbox{[},\mbox{]} \hyperlink{class_convay_1_1_core_1_1_array_grid_a50b931a7262eb725149b6552d1921af4}{point\+Array}
+\begin{DoxyCompactList}\small\item\em Tablica punktów T \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Właściwości}
+\begin{DoxyCompactItemize}
+\item 
+abstract bool \hyperlink{class_convay_1_1_core_1_1_array_grid_a5172309852f135d2cde364c609733000}{this\mbox{[}int x\+Coordinate, int y\+Coordinate\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa czy punkt jest żywy \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Siatka gry w życie oparta na tablicy 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Typ punktów używany w tablicy\\
+\hline
+\end{DoxyTemplParams}
+
+
+Definicja w linii 12 pliku Array\+Grid.\+cs.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_convay_1_1_core_1_1_array_grid_af958573a897054ae4a946795082b3d5e}{}\label{class_convay_1_1_core_1_1_array_grid_af958573a897054ae4a946795082b3d5e} 
+\index{Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}!Array\+Grid@{Array\+Grid}}
+\index{Array\+Grid@{Array\+Grid}!Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}}
+\subsubsection{\texorpdfstring{Array\+Grid()}{ArrayGrid()}}
+{\footnotesize\ttfamily \hyperlink{class_convay_1_1_core_1_1_array_grid}{Convay.\+Core.\+Array\+Grid}$<$ T $>$.\hyperlink{class_convay_1_1_core_1_1_array_grid}{Array\+Grid} (\begin{DoxyParamCaption}\item[{int}]{x\+Size,  }\item[{int}]{y\+Size }\end{DoxyParamCaption})}
+
+
+
+Konstruuje siatkę o zadanej wielkości 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x\+Size} & Szerokość\\
+\hline
+{\em y\+Size} & Wysokość\\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 34 pliku Array\+Grid.\+cs.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_convay_1_1_core_1_1_array_grid_a139eba7f8a6780b4ecbc446959e159ad}{}\label{class_convay_1_1_core_1_1_array_grid_a139eba7f8a6780b4ecbc446959e159ad} 
+\index{Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}!Clone@{Clone}}
+\index{Clone@{Clone}!Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily abstract \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} \hyperlink{class_convay_1_1_core_1_1_array_grid}{Convay.\+Core.\+Array\+Grid}$<$ T $>$.Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Zwraca kopię siatki 
+
+\begin{DoxyReturn}{Zwraca}
+kopia siatki
+\end{DoxyReturn}
+
+
+Implementuje \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_afb85615bea4fe14885fc2c36b16a9309}{Convay.\+Core.\+Interfaces.\+I\+Grid}.
+
+
+
+Implementowany w \hyperlink{class_convay_1_1_core_1_1_byte_grid_aff3101705112bb6f708d694b34a7e5f2}{Convay.\+Core.\+Byte\+Grid} i \hyperlink{class_convay_1_1_core_1_1_generic_grid_af2556688d2c1a33797ce8f79d15836b4}{Convay.\+Core.\+Generic\+Grid$<$ T $>$}.
+
+\hypertarget{class_convay_1_1_core_1_1_array_grid_a90fc10f845bf94f334079751fc9c1cba}{}\label{class_convay_1_1_core_1_1_array_grid_a90fc10f845bf94f334079751fc9c1cba} 
+\index{Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}!Exist@{Exist}}
+\index{Exist@{Exist}!Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}}
+\subsubsection{\texorpdfstring{Exist()}{Exist()}}
+{\footnotesize\ttfamily virtual bool \hyperlink{class_convay_1_1_core_1_1_array_grid}{Convay.\+Core.\+Array\+Grid}$<$ T $>$.Exist (\begin{DoxyParamCaption}\item[{int}]{x\+Coordinate,  }\item[{int}]{y\+Coordinate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Określa istnienie punktu o zadanych współrzędnych w siatce 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x\+Coordinate} & Współrzędna X\\
+\hline
+{\em y\+Coordinate} & Współrzędna Y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true gdy istnieje, false w przeciwnym wypadku
+\end{DoxyReturn}
+
+
+Implementuje \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_a269281497dd5a218f1505d97b51d45b4}{Convay.\+Core.\+Interfaces.\+I\+Grid}.
+
+\hypertarget{class_convay_1_1_core_1_1_array_grid_a9c0d58bccaf8fec674219fbcc8295e95}{}\label{class_convay_1_1_core_1_1_array_grid_a9c0d58bccaf8fec674219fbcc8295e95} 
+\index{Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}!Get\+Point@{Get\+Point}}
+\index{Get\+Point@{Get\+Point}!Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}}
+\subsubsection{\texorpdfstring{Get\+Point()}{GetPoint()}}
+{\footnotesize\ttfamily virtual T \hyperlink{class_convay_1_1_core_1_1_array_grid}{Convay.\+Core.\+Array\+Grid}$<$ T $>$.Get\+Point (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Umożliwia dostęp do punktu o zadanych współrzędnych 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & Współrzędna X\\
+\hline
+{\em y} & Współrzędna Y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Referencja danego punktu
+\end{DoxyReturn}
+
+
+Definicja w linii 45 pliku Array\+Grid.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_array_grid_a49501f55af9f747ed75cb94563b6d641}{}\label{class_convay_1_1_core_1_1_array_grid_a49501f55af9f747ed75cb94563b6d641} 
+\index{Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily abstract void \hyperlink{class_convay_1_1_core_1_1_array_grid}{Convay.\+Core.\+Array\+Grid}$<$ T $>$.Initialize (\begin{DoxyParamCaption}\item[{int}]{x\+Size,  }\item[{int}]{y\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Ustawia pustą siatkę o zadanej wielkości 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x\+Size} & Szerokość\\
+\hline
+{\em y\+Size} & Wysokość\\
+\hline
+\end{DoxyParams}
+
+
+Implementuje \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_a405c8dd71debf227ef90365d7fdf52b2}{Convay.\+Core.\+Interfaces.\+I\+Grid}.
+
+
+
+Implementowany w \hyperlink{class_convay_1_1_core_1_1_byte_grid_a75128576734ebd27f9b469ed0f7aaeee}{Convay.\+Core.\+Byte\+Grid} i \hyperlink{class_convay_1_1_core_1_1_generic_grid_a5d39ff67bb67b6a70455ecd61fc1a0ef}{Convay.\+Core.\+Generic\+Grid$<$ T $>$}.
+
+\hypertarget{class_convay_1_1_core_1_1_array_grid_a3d6803d7c51929e3a26c57a7f0dc87e1}{}\label{class_convay_1_1_core_1_1_array_grid_a3d6803d7c51929e3a26c57a7f0dc87e1} 
+\index{Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}!new\+Argument\+Out\+Of\+Range\+Exception@{new\+Argument\+Out\+Of\+Range\+Exception}}
+\index{new\+Argument\+Out\+Of\+Range\+Exception@{new\+Argument\+Out\+Of\+Range\+Exception}!Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}}
+\subsubsection{\texorpdfstring{new\+Argument\+Out\+Of\+Range\+Exception()}{newArgumentOutOfRangeException()}}
+{\footnotesize\ttfamily Argument\+Out\+Of\+Range\+Exception \hyperlink{class_convay_1_1_core_1_1_array_grid}{Convay.\+Core.\+Array\+Grid}$<$ T $>$.new\+Argument\+Out\+Of\+Range\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Zwraca wyjątek z wiadomością o przekroczeniu wymiarów siatki 
+
+\begin{DoxyReturn}{Zwraca}
+referencja nowoutworzonego wyjątku
+\end{DoxyReturn}
+
+
+Definicja w linii 140 pliku Array\+Grid.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_array_grid_a0a40a1e8519368ecfcb1e1467a53e513}{}\label{class_convay_1_1_core_1_1_array_grid_a0a40a1e8519368ecfcb1e1467a53e513} 
+\index{Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}!Randomize@{Randomize}}
+\index{Randomize@{Randomize}!Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}}
+\subsubsection{\texorpdfstring{Randomize()}{Randomize()}}
+{\footnotesize\ttfamily virtual void \hyperlink{class_convay_1_1_core_1_1_array_grid}{Convay.\+Core.\+Array\+Grid}$<$ T $>$.Randomize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Losuje punkty siatki 
+
+
+
+Implementuje \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_aee7beb6eae4302772adf85ecfc26b756}{Convay.\+Core.\+Interfaces.\+I\+Grid}.
+
+
+
+Definicja w linii 125 pliku Array\+Grid.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_array_grid_a8f64f748e08f32c2bf04ac1ec97f3e82}{}\label{class_convay_1_1_core_1_1_array_grid_a8f64f748e08f32c2bf04ac1ec97f3e82} 
+\index{Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily override string \hyperlink{class_convay_1_1_core_1_1_array_grid}{Convay.\+Core.\+Array\+Grid}$<$ T $>$.To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konwertuje siatkę na string, gdzie elementy żywe i martwe oznaczone są odpowiednio znakiem F\+U\+L\+L\+B\+L\+O\+CK lub spacji 
+
+\begin{DoxyReturn}{Zwraca}
+siatka w postaci stringu
+\end{DoxyReturn}
+
+
+Definicja w linii 101 pliku Array\+Grid.\+cs.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_convay_1_1_core_1_1_array_grid_a5abe9f109182c5fa7754db9c0b1fc58f}{}\label{class_convay_1_1_core_1_1_array_grid_a5abe9f109182c5fa7754db9c0b1fc58f} 
+\index{Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}!exception\+Resource@{exception\+Resource}}
+\index{exception\+Resource@{exception\+Resource}!Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}}
+\subsubsection{\texorpdfstring{exception\+Resource}{exceptionResource}}
+{\footnotesize\ttfamily Resource\+Manager \hyperlink{class_convay_1_1_core_1_1_array_grid}{Convay.\+Core.\+Array\+Grid}$<$ T $>$.exception\+Resource = new Resource\+Manager(typeof(\hyperlink{class_convay_1_1_core_1_1_exception_messages}{Exception\+Messages}))\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Zasób z tekstami wyjątków 
+
+
+
+Definicja w linii 17 pliku Array\+Grid.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_array_grid_a50b931a7262eb725149b6552d1921af4}{}\label{class_convay_1_1_core_1_1_array_grid_a50b931a7262eb725149b6552d1921af4} 
+\index{Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}!point\+Array@{point\+Array}}
+\index{point\+Array@{point\+Array}!Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}}
+\subsubsection{\texorpdfstring{point\+Array}{pointArray}}
+{\footnotesize\ttfamily T \mbox{[},\mbox{]} \hyperlink{class_convay_1_1_core_1_1_array_grid}{Convay.\+Core.\+Array\+Grid}$<$ T $>$.point\+Array\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Tablica punktów T 
+
+
+
+Definicja w linii 27 pliku Array\+Grid.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_array_grid_ae591bc179fd709c4d73eeb899a973d19}{}\label{class_convay_1_1_core_1_1_array_grid_ae591bc179fd709c4d73eeb899a973d19} 
+\index{Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}!random\+Generator@{random\+Generator}}
+\index{random\+Generator@{random\+Generator}!Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}}
+\subsubsection{\texorpdfstring{random\+Generator}{randomGenerator}}
+{\footnotesize\ttfamily Random \hyperlink{class_convay_1_1_core_1_1_array_grid}{Convay.\+Core.\+Array\+Grid}$<$ T $>$.random\+Generator = new Random()\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Generator liczb pseudolosowych 
+
+
+
+Definicja w linii 22 pliku Array\+Grid.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_array_grid_a4850c93797b02a67509f068bb3c2b0c0}{}\label{class_convay_1_1_core_1_1_array_grid_a4850c93797b02a67509f068bb3c2b0c0} 
+\index{Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}!X\+Size@{X\+Size}}
+\index{X\+Size@{X\+Size}!Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}}
+\subsubsection{\texorpdfstring{X\+Size}{XSize}}
+{\footnotesize\ttfamily virtual int \hyperlink{class_convay_1_1_core_1_1_array_grid}{Convay.\+Core.\+Array\+Grid}$<$ T $>$.X\+Size =$>$ point\+Array.\+Get\+Length(0)}
+
+
+
+Zwraca szerokość siatki 
+
+
+
+Definicja w linii 68 pliku Array\+Grid.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_array_grid_a315d51b878cb8952f0578cffd13546bd}{}\label{class_convay_1_1_core_1_1_array_grid_a315d51b878cb8952f0578cffd13546bd} 
+\index{Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}!Y\+Size@{Y\+Size}}
+\index{Y\+Size@{Y\+Size}!Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}}
+\subsubsection{\texorpdfstring{Y\+Size}{YSize}}
+{\footnotesize\ttfamily virtual int \hyperlink{class_convay_1_1_core_1_1_array_grid}{Convay.\+Core.\+Array\+Grid}$<$ T $>$.Y\+Size =$>$ point\+Array.\+Get\+Length(1)}
+
+
+
+Zwraca wysokość siatki 
+
+
+
+Definicja w linii 73 pliku Array\+Grid.\+cs.
+
+
+
+\subsection{Dokumentacja właściwości}
+\hypertarget{class_convay_1_1_core_1_1_array_grid_a5172309852f135d2cde364c609733000}{}\label{class_convay_1_1_core_1_1_array_grid_a5172309852f135d2cde364c609733000} 
+\index{Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}!this\mbox{[}int x\+Coordinate, int y\+Coordinate\mbox{]}@{this[int x\+Coordinate, int y\+Coordinate]}}
+\index{this\mbox{[}int x\+Coordinate, int y\+Coordinate\mbox{]}@{this[int x\+Coordinate, int y\+Coordinate]}!Convay\+::\+Core\+::\+Array\+Grid@{Convay\+::\+Core\+::\+Array\+Grid}}
+\subsubsection{\texorpdfstring{this[int x\+Coordinate, int y\+Coordinate]}{this[int xCoordinate, int yCoordinate]}}
+{\footnotesize\ttfamily abstract bool \hyperlink{class_convay_1_1_core_1_1_array_grid}{Convay.\+Core.\+Array\+Grid}$<$ T $>$.this\mbox{[}int x\+Coordinate, int y\+Coordinate\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Określa czy punkt jest żywy 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x\+Coordinate} & Współrzędna x\\
+\hline
+{\em y\+Coordinate} & Współrzędna y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true gdy żywy, false gdy martwy
+\end{DoxyReturn}
+
+
+Definicja w linii 63 pliku Array\+Grid.\+cs.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Convay/\hyperlink{_array_grid_8cs}{Array\+Grid.\+cs}\end{DoxyCompactItemize}

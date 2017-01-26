@@ -1,0 +1,8 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$class_convay_1_1_core_1_1_array_grid.html" title="Convay.Core.ArrayGrid\l\&lt; byte \&gt;" alt="" coords="296,5,468,47"/>
+<area shape="rect" id="node2" href="$class_convay_1_1_core_1_1_byte_grid.html" title="Siatka gry w życie oparta na bajtach " alt="" coords="577,42,744,69"/>
+<area shape="rect" id="node3" href="$interface_convay_1_1_core_1_1_interfaces_1_1_i_grid.html" title="Interfejs siatki gry w życie " alt="" coords="5,97,215,123"/>
+<area shape="rect" id="node4" href="$class_convay_1_1_core_1_1_array_grid.html" title="Siatka gry w życie oparta na tablicy " alt="" coords="278,122,486,149"/>
+<area shape="rect" id="node6" href="$interface_convay_1_1_core_1_1_interfaces_1_1_i_byte_grid.html" title="Convay.Core.Interfaces.IByteGrid" alt="" coords="263,71,501,98"/>
+<area shape="rect" id="node5" href="$class_convay_1_1_core_1_1_generic_grid.html" title="Generyczna siatka gry w życie " alt="" coords="549,122,772,149"/>
+</map>

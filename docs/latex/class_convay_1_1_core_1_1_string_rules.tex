@@ -1,0 +1,174 @@
+\hypertarget{class_convay_1_1_core_1_1_string_rules}{}\section{Dokumentacja klasy Convay.\+Core.\+String\+Rules}
+\label{class_convay_1_1_core_1_1_string_rules}\index{Convay.\+Core.\+String\+Rules@{Convay.\+Core.\+String\+Rules}}
+
+
+Zasady gry oparte na standardowym zapisie w ciągu znaków  
+
+
+
+
+Diagram dziedziczenia dla Convay.\+Core.\+String\+Rules
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_convay_1_1_core_1_1_string_rules__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagram współpracy dla Convay.\+Core.\+String\+Rules\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_convay_1_1_core_1_1_string_rules__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_convay_1_1_core_1_1_string_rules_a7415d212989c204cf5135746b62c0bda}{String\+Rules} (string rules)
+\begin{DoxyCompactList}\small\item\em Przyjmuje zasady gry w postaci stringu o następującym formacie\+: \char`\"{}a/b\char`\"{}, gdzie\+: \end{DoxyCompactList}\item 
+bool \hyperlink{class_convay_1_1_core_1_1_string_rules_ae5cbc291877c0ef6b27302d64e7666ed}{Fulfil\+Dead\+Rule} (int living\+Number)
+\begin{DoxyCompactList}\small\item\em Sprawdza czy spełnia zasady dla żywych punktów \end{DoxyCompactList}\item 
+bool \hyperlink{class_convay_1_1_core_1_1_string_rules_abe8f44d51271581b0923aacf768b71ba}{Fulfil\+Life\+Rule} (int living\+Number)
+\begin{DoxyCompactList}\small\item\em Sprawdza czy spełnia zasady dla martwych punktów \end{DoxyCompactList}\item 
+string \hyperlink{class_convay_1_1_core_1_1_string_rules_a4ecd053bf61402f58c6d40bf1e368a8a}{To\+String\+Format} ()
+\begin{DoxyCompactList}\small\item\em Zwraca string w formacie \char`\"{}a/b\char`\"{}, gdzie\+: a -\/ zasady dla żywych, b -\/ zasady dla martwych \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+Resource\+Manager \hyperlink{class_convay_1_1_core_1_1_string_rules_a0003339d29aea6bd1d4bfbcc6facc9d5}{exception\+Resource} = new Resource\+Manager(typeof(\hyperlink{class_convay_1_1_core_1_1_exception_messages}{Exception\+Messages}))
+\begin{DoxyCompactList}\small\item\em Zasób z tekstami wyjątków \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Zasady gry oparte na standardowym zapisie w ciągu znaków 
+
+
+
+Definicja w linii 13 pliku String\+Rules.\+cs.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\hypertarget{class_convay_1_1_core_1_1_string_rules_a7415d212989c204cf5135746b62c0bda}{}\label{class_convay_1_1_core_1_1_string_rules_a7415d212989c204cf5135746b62c0bda} 
+\index{Convay\+::\+Core\+::\+String\+Rules@{Convay\+::\+Core\+::\+String\+Rules}!String\+Rules@{String\+Rules}}
+\index{String\+Rules@{String\+Rules}!Convay\+::\+Core\+::\+String\+Rules@{Convay\+::\+Core\+::\+String\+Rules}}
+\subsubsection{\texorpdfstring{String\+Rules()}{StringRules()}}
+{\footnotesize\ttfamily Convay.\+Core.\+String\+Rules.\+String\+Rules (\begin{DoxyParamCaption}\item[{string}]{rules }\end{DoxyParamCaption})}
+
+
+
+Przyjmuje zasady gry w postaci stringu o następującym formacie\+: \char`\"{}a/b\char`\"{}, gdzie\+: 
+
+a -\/ zasady dla żywych komórek, b -\/ zasady dla martwych komórek 
+
+
+\begin{DoxyParams}{Parametry}
+{\em rules} & \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 33 pliku String\+Rules.\+cs.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_convay_1_1_core_1_1_string_rules_ae5cbc291877c0ef6b27302d64e7666ed}{}\label{class_convay_1_1_core_1_1_string_rules_ae5cbc291877c0ef6b27302d64e7666ed} 
+\index{Convay\+::\+Core\+::\+String\+Rules@{Convay\+::\+Core\+::\+String\+Rules}!Fulfil\+Dead\+Rule@{Fulfil\+Dead\+Rule}}
+\index{Fulfil\+Dead\+Rule@{Fulfil\+Dead\+Rule}!Convay\+::\+Core\+::\+String\+Rules@{Convay\+::\+Core\+::\+String\+Rules}}
+\subsubsection{\texorpdfstring{Fulfil\+Dead\+Rule()}{FulfilDeadRule()}}
+{\footnotesize\ttfamily bool Convay.\+Core.\+String\+Rules.\+Fulfil\+Dead\+Rule (\begin{DoxyParamCaption}\item[{int}]{living\+Number }\end{DoxyParamCaption})}
+
+
+
+Sprawdza czy spełnia zasady dla żywych punktów 
+
+
+\begin{DoxyParams}{Parametry}
+{\em living\+Number} & liczba żywych sąsiadów\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true jeśli spełnia zasady, false w przeciwnym wypadku
+\end{DoxyReturn}
+
+
+Implementuje \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules_a180f2cc36d8f7db4407f679c18cf51b6}{Convay.\+Core.\+Interfaces.\+I\+Rules}.
+
+
+
+Definicja w linii 47 pliku String\+Rules.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_string_rules_abe8f44d51271581b0923aacf768b71ba}{}\label{class_convay_1_1_core_1_1_string_rules_abe8f44d51271581b0923aacf768b71ba} 
+\index{Convay\+::\+Core\+::\+String\+Rules@{Convay\+::\+Core\+::\+String\+Rules}!Fulfil\+Life\+Rule@{Fulfil\+Life\+Rule}}
+\index{Fulfil\+Life\+Rule@{Fulfil\+Life\+Rule}!Convay\+::\+Core\+::\+String\+Rules@{Convay\+::\+Core\+::\+String\+Rules}}
+\subsubsection{\texorpdfstring{Fulfil\+Life\+Rule()}{FulfilLifeRule()}}
+{\footnotesize\ttfamily bool Convay.\+Core.\+String\+Rules.\+Fulfil\+Life\+Rule (\begin{DoxyParamCaption}\item[{int}]{living\+Number }\end{DoxyParamCaption})}
+
+
+
+Sprawdza czy spełnia zasady dla martwych punktów 
+
+
+\begin{DoxyParams}{Parametry}
+{\em living\+Number} & liczba żywych sąsiadów\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true jeśli spełnia zasady, false w przeciwnym wypadku
+\end{DoxyReturn}
+
+
+Implementuje \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules_ad184ed56601ab383d06db323a83fa48e}{Convay.\+Core.\+Interfaces.\+I\+Rules}.
+
+
+
+Definicja w linii 57 pliku String\+Rules.\+cs.
+
+\hypertarget{class_convay_1_1_core_1_1_string_rules_a4ecd053bf61402f58c6d40bf1e368a8a}{}\label{class_convay_1_1_core_1_1_string_rules_a4ecd053bf61402f58c6d40bf1e368a8a} 
+\index{Convay\+::\+Core\+::\+String\+Rules@{Convay\+::\+Core\+::\+String\+Rules}!To\+String\+Format@{To\+String\+Format}}
+\index{To\+String\+Format@{To\+String\+Format}!Convay\+::\+Core\+::\+String\+Rules@{Convay\+::\+Core\+::\+String\+Rules}}
+\subsubsection{\texorpdfstring{To\+String\+Format()}{ToStringFormat()}}
+{\footnotesize\ttfamily string Convay.\+Core.\+String\+Rules.\+To\+String\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwraca string w formacie \char`\"{}a/b\char`\"{}, gdzie\+: a -\/ zasady dla żywych, b -\/ zasady dla martwych 
+
+\begin{DoxyReturn}{Zwraca}
+zasady w postaci stringu
+\end{DoxyReturn}
+
+
+Implementuje \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules_a7863e051cf9285ab1ef5b888c74d5018}{Convay.\+Core.\+Interfaces.\+I\+Rules}.
+
+
+
+Definicja w linii 94 pliku String\+Rules.\+cs.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_convay_1_1_core_1_1_string_rules_a0003339d29aea6bd1d4bfbcc6facc9d5}{}\label{class_convay_1_1_core_1_1_string_rules_a0003339d29aea6bd1d4bfbcc6facc9d5} 
+\index{Convay\+::\+Core\+::\+String\+Rules@{Convay\+::\+Core\+::\+String\+Rules}!exception\+Resource@{exception\+Resource}}
+\index{exception\+Resource@{exception\+Resource}!Convay\+::\+Core\+::\+String\+Rules@{Convay\+::\+Core\+::\+String\+Rules}}
+\subsubsection{\texorpdfstring{exception\+Resource}{exceptionResource}}
+{\footnotesize\ttfamily Resource\+Manager Convay.\+Core.\+String\+Rules.\+exception\+Resource = new Resource\+Manager(typeof(\hyperlink{class_convay_1_1_core_1_1_exception_messages}{Exception\+Messages}))\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Zasób z tekstami wyjątków 
+
+
+
+Definicja w linii 18 pliku String\+Rules.\+cs.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Convay/\hyperlink{_string_rules_8cs}{String\+Rules.\+cs}\end{DoxyCompactItemize}

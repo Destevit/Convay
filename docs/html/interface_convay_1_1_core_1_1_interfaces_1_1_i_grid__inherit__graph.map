@@ -1,0 +1,6 @@
+<map id="Convay.Core.Interfaces.IGrid" name="Convay.Core.Interfaces.IGrid">
+<area shape="rect" id="node2" href="$class_convay_1_1_core_1_1_array_grid.html" title="Siatka gry w życie oparta na tablicy " alt="" coords="19,80,227,107"/>
+<area shape="rect" id="node4" href="$interface_convay_1_1_core_1_1_interfaces_1_1_i_byte_grid.html" title="Convay.Core.Interfaces.IByteGrid" alt="" coords="251,80,490,107"/>
+<area shape="rect" id="node3" href="$class_convay_1_1_core_1_1_generic_grid.html" title="Generyczna siatka gry w życie " alt="" coords="5,155,240,181"/>
+<area shape="rect" id="node5" href="$class_convay_1_1_core_1_1_byte_grid.html" title="Siatka gry w życie oparta na bajtach " alt="" coords="287,155,454,181"/>
+</map>

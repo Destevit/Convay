@@ -1,0 +1,104 @@
+\hypertarget{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules}{}\section{Dokumentacja interfejsu Convay.\+Core.\+Interfaces.\+I\+Rules}
+\label{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules}\index{Convay.\+Core.\+Interfaces.\+I\+Rules@{Convay.\+Core.\+Interfaces.\+I\+Rules}}
+
+
+Interfejs zasad gry w życie  
+
+
+
+
+Diagram dziedziczenia dla Convay.\+Core.\+Interfaces.\+I\+Rules
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules_ad184ed56601ab383d06db323a83fa48e}{Fulfil\+Life\+Rule} (int living\+Number)
+\begin{DoxyCompactList}\small\item\em Sprawdza czy spełnia zasady dla żywych punktów \end{DoxyCompactList}\item 
+bool \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules_a180f2cc36d8f7db4407f679c18cf51b6}{Fulfil\+Dead\+Rule} (int living\+Number)
+\begin{DoxyCompactList}\small\item\em Sprawdza czy spełnia zasady dla martwych punktów \end{DoxyCompactList}\item 
+string \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules_a7863e051cf9285ab1ef5b888c74d5018}{To\+String\+Format} ()
+\begin{DoxyCompactList}\small\item\em Zwraca string w formacie \char`\"{}a/b\char`\"{}, gdzie\+: a -\/ zasady dla żywych, b -\/ zasady dla martwych \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Interfejs zasad gry w życie 
+
+
+
+Definicja w linii 11 pliku I\+Rules.\+cs.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules_a180f2cc36d8f7db4407f679c18cf51b6}{}\label{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules_a180f2cc36d8f7db4407f679c18cf51b6} 
+\index{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Rules@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Rules}!Fulfil\+Dead\+Rule@{Fulfil\+Dead\+Rule}}
+\index{Fulfil\+Dead\+Rule@{Fulfil\+Dead\+Rule}!Convay\+::\+Core\+::\+Interfaces\+::\+I\+Rules@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Rules}}
+\subsubsection{\texorpdfstring{Fulfil\+Dead\+Rule()}{FulfilDeadRule()}}
+{\footnotesize\ttfamily bool Convay.\+Core.\+Interfaces.\+I\+Rules.\+Fulfil\+Dead\+Rule (\begin{DoxyParamCaption}\item[{int}]{living\+Number }\end{DoxyParamCaption})}
+
+
+
+Sprawdza czy spełnia zasady dla martwych punktów 
+
+
+\begin{DoxyParams}{Parametry}
+{\em living\+Number} & liczba żywych sąsiadów\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true jeśli spełnia zasady, false w przeciwnym wypadku
+\end{DoxyReturn}
+
+
+Implementowany w \hyperlink{class_convay_1_1_core_1_1_string_rules_ae5cbc291877c0ef6b27302d64e7666ed}{Convay.\+Core.\+String\+Rules}.
+
+\hypertarget{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules_ad184ed56601ab383d06db323a83fa48e}{}\label{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules_ad184ed56601ab383d06db323a83fa48e} 
+\index{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Rules@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Rules}!Fulfil\+Life\+Rule@{Fulfil\+Life\+Rule}}
+\index{Fulfil\+Life\+Rule@{Fulfil\+Life\+Rule}!Convay\+::\+Core\+::\+Interfaces\+::\+I\+Rules@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Rules}}
+\subsubsection{\texorpdfstring{Fulfil\+Life\+Rule()}{FulfilLifeRule()}}
+{\footnotesize\ttfamily bool Convay.\+Core.\+Interfaces.\+I\+Rules.\+Fulfil\+Life\+Rule (\begin{DoxyParamCaption}\item[{int}]{living\+Number }\end{DoxyParamCaption})}
+
+
+
+Sprawdza czy spełnia zasady dla żywych punktów 
+
+
+\begin{DoxyParams}{Parametry}
+{\em living\+Number} & liczba żywych sąsiadów\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true jeśli spełnia zasady, false w przeciwnym wypadku
+\end{DoxyReturn}
+
+
+Implementowany w \hyperlink{class_convay_1_1_core_1_1_string_rules_abe8f44d51271581b0923aacf768b71ba}{Convay.\+Core.\+String\+Rules}.
+
+\hypertarget{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules_a7863e051cf9285ab1ef5b888c74d5018}{}\label{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules_a7863e051cf9285ab1ef5b888c74d5018} 
+\index{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Rules@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Rules}!To\+String\+Format@{To\+String\+Format}}
+\index{To\+String\+Format@{To\+String\+Format}!Convay\+::\+Core\+::\+Interfaces\+::\+I\+Rules@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Rules}}
+\subsubsection{\texorpdfstring{To\+String\+Format()}{ToStringFormat()}}
+{\footnotesize\ttfamily string Convay.\+Core.\+Interfaces.\+I\+Rules.\+To\+String\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwraca string w formacie \char`\"{}a/b\char`\"{}, gdzie\+: a -\/ zasady dla żywych, b -\/ zasady dla martwych 
+
+\begin{DoxyReturn}{Zwraca}
+zasady w postaci stringu
+\end{DoxyReturn}
+
+
+Implementowany w \hyperlink{class_convay_1_1_core_1_1_string_rules_a4ecd053bf61402f58c6d40bf1e368a8a}{Convay.\+Core.\+String\+Rules}.
+
+
+
+Dokumentacja dla tego interfejsu została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Convay/\+Interfaces/\hyperlink{_i_rules_8cs}{I\+Rules.\+cs}\end{DoxyCompactItemize}

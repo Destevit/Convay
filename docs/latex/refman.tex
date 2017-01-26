@@ -1,0 +1,271 @@
+\documentclass[twoside]{book}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage[export]{adjustbox} % also loads graphicx
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage{polski}
+\usepackage[T1]{fontenc}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{3ex plus 2ex minus 2ex}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Wygenerowano przez Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Wygenerowano przez Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{alph}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large Convay }\\
+\vspace*{1cm}
+{\large Wygenerowano przez Doxygen 1.8.12}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\chapter{Indeks przestrzeni nazw}
+\input{namespaces}
+\chapter{Indeks hierarchiczny}
+\input{hierarchy}
+\chapter{Indeks klas}
+\input{annotated}
+\chapter{Indeks plików}
+\input{files}
+\chapter{Dokumentacja przestrzeni nazw}
+\input{namespace_console_convay}
+\input{namespace_convay}
+\input{namespace_convay_1_1_core}
+\input{namespace_convay_1_1_core_1_1_interfaces}
+\input{namespace_convay_1_1_win_extension}
+\input{namespace_convay_1_1_win_forms_game}
+\input{namespace_convay_1_1_win_forms_game_1_1_properties}
+\chapter{Dokumentacja klas}
+\input{class_convay_1_1_win_forms_game_1_1_appearance_form}
+\input{class_convay_1_1_core_1_1_array_grid}
+\input{class_convay_1_1_win_extension_1_1_bitmap_serializer}
+\input{class_convay_1_1_core_1_1_byte_grid}
+\input{class_convay_1_1_win_extension_1_1_byte_visualizer}
+\input{class_convay_1_1_win_forms_game_1_1_create_grid_form}
+\input{class_convay_1_1_core_1_1_engine}
+\input{class_convay_1_1_core_1_1_exception_messages}
+\input{class_convay_1_1_core_1_1_game}
+\input{class_convay_1_1_core_1_1_generic_grid}
+\input{class_convay_1_1_core_1_1_grid_changed_event_args}
+\input{class_convay_1_1_core_1_1_grid_serializer}
+\input{interface_convay_1_1_core_1_1_interfaces_1_1_i_byte_grid}
+\input{interface_convay_1_1_win_extension_1_1_i_byte_visualizer}
+\input{interface_convay_1_1_core_1_1_interfaces_1_1_i_engine}
+\input{interface_convay_1_1_core_1_1_interfaces_1_1_i_game}
+\input{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}
+\input{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_serializer}
+\input{class_convay_1_1_win_forms_game_1_1_interpolated_picture_box}
+\input{interface_convay_1_1_core_1_1_interfaces_1_1_i_point}
+\input{interface_convay_1_1_core_1_1_interfaces_1_1_i_rules}
+\input{interface_convay_1_1_win_extension_1_1_i_visualizer}
+\input{class_convay_1_1_win_forms_game_1_1_main_form}
+\input{class_convay_1_1_core_1_1_parallel_engine}
+\input{class_convay_1_1_core_1_1_point}
+\input{class_console_convay_1_1_program}
+\input{class_convay_1_1_core_1_1_rules_changed_event_args}
+\input{class_convay_1_1_win_extension_1_1_safe_visualizer}
+\input{class_convay_1_1_win_forms_game_1_1_settings_form}
+\input{class_convay_1_1_core_1_1_string_rules}
+\input{class_convay_1_1_win_extension_1_1_unsafe_visualizer}
+\chapter{Dokumentacja plików}
+\input{_console_convay_2obj_2_debug_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs}
+\input{_console_convay_2obj_2_release_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs}
+\input{_convay_2obj_2_debug_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs}
+\input{_convay_2obj_2_release_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs}
+\input{_win_extension_2obj_2_debug_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs}
+\input{_win_extension_2obj_2_release_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs}
+\input{_win_forms_game_2obj_2_debug_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs}
+\input{_win_forms_game_2obj_2_release_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs}
+\input{_console_convay_2obj_2_debug_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs}
+\input{_console_convay_2obj_2_release_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs}
+\input{_convay_2obj_2_debug_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs}
+\input{_convay_2obj_2_release_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs}
+\input{_win_extension_2obj_2_debug_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs}
+\input{_win_extension_2obj_2_release_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs}
+\input{_win_forms_game_2obj_2_debug_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs}
+\input{_win_forms_game_2obj_2_release_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs}
+\input{_console_convay_2obj_2_debug_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs}
+\input{_console_convay_2obj_2_release_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs}
+\input{_convay_2obj_2_debug_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs}
+\input{_convay_2obj_2_release_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs}
+\input{_win_extension_2obj_2_debug_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs}
+\input{_win_extension_2obj_2_release_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs}
+\input{_win_forms_game_2obj_2_debug_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs}
+\input{_win_forms_game_2obj_2_release_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs}
+\input{_console_convay_2_program_8cs}
+\input{_win_forms_game_2_program_8cs}
+\input{_console_convay_2_properties_2_assembly_info_8cs}
+\input{_convay_2_properties_2_assembly_info_8cs}
+\input{_win_extension_2_properties_2_assembly_info_8cs}
+\input{_win_forms_game_2_properties_2_assembly_info_8cs}
+\input{_array_grid_8cs}
+\input{_byte_grid_8cs}
+\input{_engine_8cs}
+\input{_rules_changed_event_args_8cs}
+\input{_step_taken_event_args_8cs}
+\input{_exception_messages_8_designer_8cs}
+\input{_game_8cs}
+\input{_generic_grid_8cs}
+\input{_grid_serializer_8cs}
+\input{_i_byte_grid_8cs}
+\input{_i_engine_8cs}
+\input{_i_game_8cs}
+\input{_i_grid_8cs}
+\input{_i_grid_serializer_8cs}
+\input{_i_point_8cs}
+\input{_i_rules_8cs}
+\input{_parallel_engine_8cs}
+\input{_point_8cs}
+\input{_string_rules_8cs}
+\input{_bitmap_serializer_8cs}
+\input{_byte_visualizer_8cs}
+\input{_i_visualizer_8cs}
+\input{_safe_visualizer_8cs}
+\input{_unsafe_visualizer_8cs}
+\input{_appearance_form_8cs}
+\input{_appearance_form_8_designer_8cs}
+\input{_create_grid_form_8cs}
+\input{_create_grid_form_8_designer_8cs}
+\input{_interpolated_picture_box_8cs}
+\input{_main_form_8cs}
+\input{_main_form_8_designer_8cs}
+\input{_resources_8_designer_8cs}
+\input{_settings_8_designer_8cs}
+\input{_settings_8cs}
+\input{_settings_form_8cs}
+\input{_settings_form_8_designer_8cs}
+\input{_state_8cs}
+%--- End generated contents ---
+
+% Index
+\backmatter
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{chapter}{Indeks}
+\printindex
+
+\end{document}

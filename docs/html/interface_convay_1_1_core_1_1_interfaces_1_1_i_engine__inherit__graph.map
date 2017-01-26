@@ -1,0 +1,4 @@
+<map id="Convay.Core.Interfaces.IEngine" name="Convay.Core.Interfaces.IEngine">
+<area shape="rect" id="node2" href="$class_convay_1_1_core_1_1_engine.html" title="Silnik gry w życie " alt="" coords="41,80,196,107"/>
+<area shape="rect" id="node3" href="$class_convay_1_1_core_1_1_parallel_engine.html" title="Silnik gry w życie pracujący na wielu wątkach " alt="" coords="17,155,220,181"/>
+</map>

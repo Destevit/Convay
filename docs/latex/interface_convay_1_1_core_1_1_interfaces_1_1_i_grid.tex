@@ -1,0 +1,185 @@
+\hypertarget{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{}\section{Dokumentacja interfejsu Convay.\+Core.\+Interfaces.\+I\+Grid}
+\label{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}\index{Convay.\+Core.\+Interfaces.\+I\+Grid@{Convay.\+Core.\+Interfaces.\+I\+Grid}}
+
+
+Interfejs siatki gry w życie  
+
+
+
+
+Diagram dziedziczenia dla Convay.\+Core.\+Interfaces.\+I\+Grid
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_afb85615bea4fe14885fc2c36b16a9309}{Clone} ()
+\begin{DoxyCompactList}\small\item\em Zwraca kopię siatki \end{DoxyCompactList}\item 
+bool \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_a269281497dd5a218f1505d97b51d45b4}{Exist} (int x\+Coordinate, int y\+Coordinate)
+\begin{DoxyCompactList}\small\item\em Określa czy punkt o danych współrzędnych istnieje \end{DoxyCompactList}\item 
+void \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_a405c8dd71debf227ef90365d7fdf52b2}{Initialize} (int x\+Size, int y\+Size)
+\begin{DoxyCompactList}\small\item\em Inicjalizuje siatkę o zadanej wielkości \end{DoxyCompactList}\item 
+void \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_aee7beb6eae4302772adf85ecfc26b756}{Randomize} ()
+\begin{DoxyCompactList}\small\item\em Losuje punkty siatki \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Właściwości}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_ae1562a81e75321521382918483706e65}{this\mbox{[}int x\+Coordinate, int y\+Coordinate\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Określa czy punkt jest żywy \end{DoxyCompactList}\item 
+int \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_a1e8b553ad4216cc871e5ba22518cafdb}{X\+Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Zwraca szerokość siatki \end{DoxyCompactList}\item 
+int \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_a049f4b262c16e04b2bd4e83c2c30deac}{Y\+Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Zwraca wysokość siatki \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Interfejs siatki gry w życie 
+
+
+
+Definicja w linii 11 pliku I\+Grid.\+cs.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_afb85615bea4fe14885fc2c36b16a9309}{}\label{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_afb85615bea4fe14885fc2c36b16a9309} 
+\index{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid}!Clone@{Clone}}
+\index{Clone@{Clone}!Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \hyperlink{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid}{I\+Grid} Convay.\+Core.\+Interfaces.\+I\+Grid.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwraca kopię siatki 
+
+\begin{DoxyReturn}{Zwraca}
+kopia siatki
+\end{DoxyReturn}
+
+
+Implementowany w \hyperlink{class_convay_1_1_core_1_1_array_grid_a139eba7f8a6780b4ecbc446959e159ad}{Convay.\+Core.\+Array\+Grid$<$ T $>$}, \hyperlink{class_convay_1_1_core_1_1_byte_grid_aff3101705112bb6f708d694b34a7e5f2}{Convay.\+Core.\+Byte\+Grid} i \hyperlink{class_convay_1_1_core_1_1_generic_grid_af2556688d2c1a33797ce8f79d15836b4}{Convay.\+Core.\+Generic\+Grid$<$ T $>$}.
+
+\hypertarget{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_a269281497dd5a218f1505d97b51d45b4}{}\label{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_a269281497dd5a218f1505d97b51d45b4} 
+\index{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid}!Exist@{Exist}}
+\index{Exist@{Exist}!Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid}}
+\subsubsection{\texorpdfstring{Exist()}{Exist()}}
+{\footnotesize\ttfamily bool Convay.\+Core.\+Interfaces.\+I\+Grid.\+Exist (\begin{DoxyParamCaption}\item[{int}]{x\+Coordinate,  }\item[{int}]{y\+Coordinate }\end{DoxyParamCaption})}
+
+
+
+Określa czy punkt o danych współrzędnych istnieje 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x\+Coordinate} & Współrzędna X\\
+\hline
+{\em y\+Coordinate} & Współrzędna Y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+
+\end{DoxyReturn}
+
+
+Implementowany w \hyperlink{class_convay_1_1_core_1_1_array_grid_a90fc10f845bf94f334079751fc9c1cba}{Convay.\+Core.\+Array\+Grid$<$ T $>$}.
+
+\hypertarget{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_a405c8dd71debf227ef90365d7fdf52b2}{}\label{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_a405c8dd71debf227ef90365d7fdf52b2} 
+\index{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid}}
+\subsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Convay.\+Core.\+Interfaces.\+I\+Grid.\+Initialize (\begin{DoxyParamCaption}\item[{int}]{x\+Size,  }\item[{int}]{y\+Size }\end{DoxyParamCaption})}
+
+
+
+Inicjalizuje siatkę o zadanej wielkości 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x\+Size} & Szerokość siatki\\
+\hline
+{\em y\+Size} & Wysokość sitaki\\
+\hline
+\end{DoxyParams}
+
+
+Implementowany w \hyperlink{class_convay_1_1_core_1_1_array_grid_a49501f55af9f747ed75cb94563b6d641}{Convay.\+Core.\+Array\+Grid$<$ T $>$}, \hyperlink{class_convay_1_1_core_1_1_byte_grid_a75128576734ebd27f9b469ed0f7aaeee}{Convay.\+Core.\+Byte\+Grid} i \hyperlink{class_convay_1_1_core_1_1_generic_grid_a5d39ff67bb67b6a70455ecd61fc1a0ef}{Convay.\+Core.\+Generic\+Grid$<$ T $>$}.
+
+\hypertarget{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_aee7beb6eae4302772adf85ecfc26b756}{}\label{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_aee7beb6eae4302772adf85ecfc26b756} 
+\index{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid}!Randomize@{Randomize}}
+\index{Randomize@{Randomize}!Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid}}
+\subsubsection{\texorpdfstring{Randomize()}{Randomize()}}
+{\footnotesize\ttfamily void Convay.\+Core.\+Interfaces.\+I\+Grid.\+Randomize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Losuje punkty siatki 
+
+
+
+Implementowany w \hyperlink{class_convay_1_1_core_1_1_array_grid_a0a40a1e8519368ecfcb1e1467a53e513}{Convay.\+Core.\+Array\+Grid$<$ T $>$}.
+
+
+
+\subsection{Dokumentacja właściwości}
+\hypertarget{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_ae1562a81e75321521382918483706e65}{}\label{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_ae1562a81e75321521382918483706e65} 
+\index{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid}!this\mbox{[}int x\+Coordinate, int y\+Coordinate\mbox{]}@{this[int x\+Coordinate, int y\+Coordinate]}}
+\index{this\mbox{[}int x\+Coordinate, int y\+Coordinate\mbox{]}@{this[int x\+Coordinate, int y\+Coordinate]}!Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid}}
+\subsubsection{\texorpdfstring{this[int x\+Coordinate, int y\+Coordinate]}{this[int xCoordinate, int yCoordinate]}}
+{\footnotesize\ttfamily bool Convay.\+Core.\+Interfaces.\+I\+Grid.\+this\mbox{[}int x\+Coordinate, int y\+Coordinate\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Określa czy punkt jest żywy 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x\+Coordinate} & Współrzędna x\\
+\hline
+{\em y\+Coordinate} & Współrzędna y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true gdy żywy, false gdy martwy
+\end{DoxyReturn}
+
+
+Definicja w linii 19 pliku I\+Grid.\+cs.
+
+\hypertarget{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_a1e8b553ad4216cc871e5ba22518cafdb}{}\label{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_a1e8b553ad4216cc871e5ba22518cafdb} 
+\index{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid}!X\+Size@{X\+Size}}
+\index{X\+Size@{X\+Size}!Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid}}
+\subsubsection{\texorpdfstring{X\+Size}{XSize}}
+{\footnotesize\ttfamily int Convay.\+Core.\+Interfaces.\+I\+Grid.\+X\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Zwraca szerokość siatki 
+
+
+
+Definicja w linii 24 pliku I\+Grid.\+cs.
+
+\hypertarget{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_a049f4b262c16e04b2bd4e83c2c30deac}{}\label{interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_a049f4b262c16e04b2bd4e83c2c30deac} 
+\index{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid}!Y\+Size@{Y\+Size}}
+\index{Y\+Size@{Y\+Size}!Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid@{Convay\+::\+Core\+::\+Interfaces\+::\+I\+Grid}}
+\subsubsection{\texorpdfstring{Y\+Size}{YSize}}
+{\footnotesize\ttfamily int Convay.\+Core.\+Interfaces.\+I\+Grid.\+Y\+Size\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Zwraca wysokość siatki 
+
+
+
+Definicja w linii 29 pliku I\+Grid.\+cs.
+
+
+
+Dokumentacja dla tego interfejsu została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Convay/\+Interfaces/\hyperlink{_i_grid_8cs}{I\+Grid.\+cs}\end{DoxyCompactItemize}

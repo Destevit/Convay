@@ -1,0 +1,4 @@
+<map id="Convay.Core.Game.Randomize" name="Convay.Core.Game.Randomize">
+<area shape="rect" id="node2" href="$interface_convay_1_1_core_1_1_interfaces_1_1_i_grid.html#a405c8dd71debf227ef90365d7fdf52b2" title="Inicjalizuje siatkę o zadanej wielkości " alt="" coords="281,5,495,47"/>
+<area shape="rect" id="node3" href="$interface_convay_1_1_core_1_1_interfaces_1_1_i_grid.html#aee7beb6eae4302772adf85ecfc26b756" title="Losuje punkty siatki " alt="" coords="281,71,495,112"/>
+</map>

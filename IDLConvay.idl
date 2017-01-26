@@ -1,0 +1,76 @@
+module Core
+{
+	public interface IEngine
+	{
+		oneway int CountAliveNeighbours(in IGrid grid, in int xCoordinate, in int yCoordinate);
+		oneway int CountDeadNeighbours(in IGrid grid, in int xCoordinate, in int yCoordinate);
+		oneway IGrid TakeStep(in IGrid grid, in IRules rules);
+	}
+
+	public interface IGame
+	{
+
+		attribute EventHandler<GridChangedEventArgs> GridChanged;
+		attribute EventHandler<RulesChangedEventArgs> RulesChanged;
+		attribute EventHandler<Boolean> GameStateChanged;
+		attribute IRules Rules;
+		attribute IGrid Grid;
+		attribute IEngine Engine;
+		attribute TimeSpan Interval;
+		attribute Boolean IsRunning;
+		oneway void Start();
+		oneway void Stop();
+		oneway void Randomize();
+	}
+
+
+	public interface IGrid
+	{
+
+		attribute bool Item(in int x, in int y);
+		attribute int XSize;
+		attribute int YSize;
+
+		oneway IGrid Clone();
+		oneway bool Exist(in int xCoordinate, in int yCoordinate);
+		oneway void Initialize(in int xSize, in int ySize);
+		oneway void Randomize();
+	}
+
+	public interface IGridSerializer
+	{
+		oneway void SaveToStream(in IGrid grid, out Stream stream);
+		oneway void LoadFromStream(in Stream stream, out IGrid grid);
+	}
+
+	public interface IPoint
+	{
+		attribute bool IsAlive;
+		oneway IPoint Clone();
+	}
+
+	public interface IRules
+	{
+		oneway bool FulfilLifeRule(in int livingNumber);
+		oneway bool FulfilDeadrule(in int livingNumber);
+		oneway string ToStringFormat():
+	}
+
+	public interace IByteGrid
+	{
+		oneway byte GetPoint(int x, int y);
+	}
+}
+
+module WinExtension
+{
+	public interface IVisualizer
+	{
+		oneway Bitmap ToBitmap(in IGrid grid, in Color livingColor, in Color deadColor);
+	}
+
+	public interface IByteVisualizer
+	{
+		oneway Bitmap ToBitmap(in IByteGrid grid, in Color[] livingColors, in Color[] deadColors);
+	}
+}

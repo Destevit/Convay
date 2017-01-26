@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Convay: Plik źródłowy Convay/StringRules.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Convay
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_string_rules_8cs_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">StringRules.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_string_rules_8cs.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_convay.html">Convay</a>.<a class="code" href="namespace_convay_1_1_core.html">Core</a>.<a class="code" href="namespace_convay_1_1_core_1_1_interfaces.html">Interfaces</a>;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.Collections.Generic;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.Linq;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.Resources;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_system.html">System</a>.Text;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_convay.html">Convay</a>.Core</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_convay_1_1_core_1_1_string_rules.html">   13</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_convay_1_1_core_1_1_string_rules.html">StringRules</a> : <a class="code" href="interface_convay_1_1_core_1_1_interfaces_1_1_i_rules.html">IRules</a></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_convay_1_1_core_1_1_string_rules.html#a0003339d29aea6bd1d4bfbcc6facc9d5">   18</a></span>&#160;        <span class="keyword">protected</span> ResourceManager exceptionResource = <span class="keyword">new</span> ResourceManager(typeof(<a class="code" href="class_convay_1_1_core_1_1_exception_messages.html">ExceptionMessages</a>));</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">private</span> List&lt;int&gt; lifeRules, deadRules;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_convay_1_1_core_1_1_string_rules.html#a7415d212989c204cf5135746b62c0bda">   33</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_convay_1_1_core_1_1_string_rules.html#a7415d212989c204cf5135746b62c0bda">StringRules</a>(<span class="keywordtype">string</span> rules)</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordtype">string</span>[] rulesArray = rules.Split(<span class="charliteral">&#39;/&#39;</span>);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">if</span> (rulesArray.Length != 2)</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keywordflow">throw</span> newBadRulesFormatException();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            lifeRules = parseRules(rulesArray[0]);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            deadRules = parseRules(rulesArray[1]);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_convay_1_1_core_1_1_string_rules.html#ae5cbc291877c0ef6b27302d64e7666ed">   47</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_convay_1_1_core_1_1_string_rules.html#ae5cbc291877c0ef6b27302d64e7666ed">FulfilDeadRule</a>(<span class="keywordtype">int</span> livingNumber)</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">return</span> deadRules.Contains(livingNumber);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_convay_1_1_core_1_1_string_rules.html#abe8f44d51271581b0923aacf768b71ba">   57</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_convay_1_1_core_1_1_string_rules.html#abe8f44d51271581b0923aacf768b71ba">FulfilLifeRule</a>(<span class="keywordtype">int</span> livingNumber)</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> lifeRules.Contains(livingNumber);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">private</span> List&lt;int&gt; parseRules(<span class="keywordtype">string</span> rules)</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            var intRules = <span class="keyword">new</span> List&lt;int&gt;(rules.Length);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">foreach</span> (<span class="keywordtype">char</span> rule <span class="keywordflow">in</span> rules)</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordtype">int</span> intRule;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keywordtype">bool</span> parsed = <span class="keywordtype">int</span>.TryParse(rule.ToString(), out intRule);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordflow">if</span> (!parsed)</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    <span class="keywordflow">throw</span> newBadRulesFormatException();</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                intRules.Add(intRule);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">return</span> intRules;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">private</span> Exception newBadRulesFormatException()</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> ArgumentException(exceptionResource.GetString(<span class="stringliteral">&quot;BadRulesFormat&quot;</span>));</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_convay_1_1_core_1_1_string_rules.html#a4ecd053bf61402f58c6d40bf1e368a8a">   94</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_convay_1_1_core_1_1_string_rules.html#a4ecd053bf61402f58c6d40bf1e368a8a">ToStringFormat</a>()</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordtype">string</span> rules = <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">foreach</span> (<span class="keywordtype">int</span> rule <span class="keywordflow">in</span> lifeRules)</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            {</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                rules += rule.ToString();</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            }</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            rules += <span class="charliteral">&#39;/&#39;</span>;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">foreach</span> (<span class="keywordtype">int</span> rule <span class="keywordflow">in</span> deadRules)</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            {</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                rules += rule.ToString();</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            }</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">return</span> rules;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div><div class="ttc" id="namespace_convay_1_1_core_1_1_interfaces_html"><div class="ttname"><a href="namespace_convay_1_1_core_1_1_interfaces.html">Convay.Core.Interfaces</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_byte_grid_8cs_source.html#l00007">IByteGrid.cs:7</a></div></div>
+<div class="ttc" id="namespace_system_html"><div class="ttname"><a href="namespace_system.html">System</a></div></div>
+<div class="ttc" id="class_convay_1_1_core_1_1_string_rules_html_ae5cbc291877c0ef6b27302d64e7666ed"><div class="ttname"><a href="class_convay_1_1_core_1_1_string_rules.html#ae5cbc291877c0ef6b27302d64e7666ed">Convay.Core.StringRules.FulfilDeadRule</a></div><div class="ttdeci">bool FulfilDeadRule(int livingNumber)</div><div class="ttdoc">Sprawdza czy spełnia zasady dla żywych punktów </div><div class="ttdef"><b>Definition:</b> <a href="_string_rules_8cs_source.html#l00047">StringRules.cs:47</a></div></div>
+<div class="ttc" id="namespace_convay_html"><div class="ttname"><a href="namespace_convay.html">Convay</a></div></div>
+<div class="ttc" id="class_convay_1_1_core_1_1_string_rules_html_a7415d212989c204cf5135746b62c0bda"><div class="ttname"><a href="class_convay_1_1_core_1_1_string_rules.html#a7415d212989c204cf5135746b62c0bda">Convay.Core.StringRules.StringRules</a></div><div class="ttdeci">StringRules(string rules)</div><div class="ttdoc">Przyjmuje zasady gry w postaci stringu o następującym formacie: &quot;a/b&quot;, gdzie: </div><div class="ttdef"><b>Definition:</b> <a href="_string_rules_8cs_source.html#l00033">StringRules.cs:33</a></div></div>
+<div class="ttc" id="class_convay_1_1_core_1_1_string_rules_html_a4ecd053bf61402f58c6d40bf1e368a8a"><div class="ttname"><a href="class_convay_1_1_core_1_1_string_rules.html#a4ecd053bf61402f58c6d40bf1e368a8a">Convay.Core.StringRules.ToStringFormat</a></div><div class="ttdeci">string ToStringFormat()</div><div class="ttdoc">Zwraca string w formacie &quot;a/b&quot;, gdzie: a - zasady dla żywych, b - zasady dla martwych ...</div><div class="ttdef"><b>Definition:</b> <a href="_string_rules_8cs_source.html#l00094">StringRules.cs:94</a></div></div>
+<div class="ttc" id="class_convay_1_1_core_1_1_string_rules_html_abe8f44d51271581b0923aacf768b71ba"><div class="ttname"><a href="class_convay_1_1_core_1_1_string_rules.html#abe8f44d51271581b0923aacf768b71ba">Convay.Core.StringRules.FulfilLifeRule</a></div><div class="ttdeci">bool FulfilLifeRule(int livingNumber)</div><div class="ttdoc">Sprawdza czy spełnia zasady dla martwych punktów </div><div class="ttdef"><b>Definition:</b> <a href="_string_rules_8cs_source.html#l00057">StringRules.cs:57</a></div></div>
+<div class="ttc" id="class_convay_1_1_core_1_1_exception_messages_html"><div class="ttname"><a href="class_convay_1_1_core_1_1_exception_messages.html">Convay.Core.ExceptionMessages</a></div><div class="ttdoc">A strongly-typed resource class, for looking up localized strings, etc. </div><div class="ttdef"><b>Definition:</b> <a href="_exception_messages_8_designer_8cs_source.html#l00026">ExceptionMessages.Designer.cs:26</a></div></div>
+<div class="ttc" id="namespace_convay_1_1_core_html"><div class="ttname"><a href="namespace_convay_1_1_core.html">Convay.Core</a></div><div class="ttdef"><b>Definition:</b> <a href="_array_grid_8cs_source.html#l00006">ArrayGrid.cs:6</a></div></div>
+<div class="ttc" id="interface_convay_1_1_core_1_1_interfaces_1_1_i_rules_html"><div class="ttname"><a href="interface_convay_1_1_core_1_1_interfaces_1_1_i_rules.html">Convay.Core.Interfaces.IRules</a></div><div class="ttdoc">Interfejs zasad gry w życie </div><div class="ttdef"><b>Definition:</b> <a href="_i_rules_8cs_source.html#l00011">IRules.cs:11</a></div></div>
+<div class="ttc" id="class_convay_1_1_core_1_1_string_rules_html"><div class="ttname"><a href="class_convay_1_1_core_1_1_string_rules.html">Convay.Core.StringRules</a></div><div class="ttdoc">Zasady gry oparte na standardowym zapisie w ciągu znaków </div><div class="ttdef"><b>Definition:</b> <a href="_string_rules_8cs_source.html#l00013">StringRules.cs:13</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_e0454f6b5045b666fcceac2f103575ca.html">Convay</a></li><li class="navelem"><a class="el" href="_string_rules_8cs.html">StringRules.cs</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
+</body>
+</html>

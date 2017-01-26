@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['ibytegrid',['IByteGrid',['../interface_convay_1_1_core_1_1_interfaces_1_1_i_byte_grid.html',1,'Convay::Core::Interfaces']]],
+  ['ibytegrid_2ecs',['IByteGrid.cs',['../_i_byte_grid_8cs.html',1,'']]],
+  ['ibytevisualizer',['IByteVisualizer',['../interface_convay_1_1_win_extension_1_1_i_byte_visualizer.html',1,'Convay::WinExtension']]],
+  ['iengine',['IEngine',['../interface_convay_1_1_core_1_1_interfaces_1_1_i_engine.html',1,'Convay::Core::Interfaces']]],
+  ['iengine_2ecs',['IEngine.cs',['../_i_engine_8cs.html',1,'']]],
+  ['igame',['IGame',['../interface_convay_1_1_core_1_1_interfaces_1_1_i_game.html',1,'Convay::Core::Interfaces']]],
+  ['igame_2ecs',['IGame.cs',['../_i_game_8cs.html',1,'']]],
+  ['igrid',['IGrid',['../interface_convay_1_1_core_1_1_interfaces_1_1_i_grid.html',1,'Convay::Core::Interfaces']]],
+  ['igrid_2ecs',['IGrid.cs',['../_i_grid_8cs.html',1,'']]],
+  ['igridserializer',['IGridSerializer',['../interface_convay_1_1_core_1_1_interfaces_1_1_i_grid_serializer.html',1,'Convay::Core::Interfaces']]],
+  ['igridserializer_2ecs',['IGridSerializer.cs',['../_i_grid_serializer_8cs.html',1,'']]],
+  ['initialize',['Initialize',['../class_convay_1_1_core_1_1_array_grid.html#a49501f55af9f747ed75cb94563b6d641',1,'Convay.Core.ArrayGrid.Initialize()'],['../class_convay_1_1_core_1_1_byte_grid.html#a75128576734ebd27f9b469ed0f7aaeee',1,'Convay.Core.ByteGrid.Initialize()'],['../class_convay_1_1_core_1_1_generic_grid.html#a5d39ff67bb67b6a70455ecd61fc1a0ef',1,'Convay.Core.GenericGrid.Initialize()'],['../interface_convay_1_1_core_1_1_interfaces_1_1_i_grid.html#a405c8dd71debf227ef90365d7fdf52b2',1,'Convay.Core.Interfaces.IGrid.Initialize()']]],
+  ['interpolatedpicturebox',['InterpolatedPictureBox',['../class_convay_1_1_win_forms_game_1_1_interpolated_picture_box.html',1,'Convay::WinFormsGame']]],
+  ['interpolatedpicturebox_2ecs',['InterpolatedPictureBox.cs',['../_interpolated_picture_box_8cs.html',1,'']]],
+  ['interpolation',['Interpolation',['../class_convay_1_1_win_forms_game_1_1_interpolated_picture_box.html#ae3ca4b6ef461db4055b7cbe577b15432',1,'Convay::WinFormsGame::InterpolatedPictureBox']]],
+  ['interval',['Interval',['../class_convay_1_1_core_1_1_game.html#aafac64f23595335c918fa666223482c8',1,'Convay.Core.Game.Interval()'],['../interface_convay_1_1_core_1_1_interfaces_1_1_i_game.html#ac983ad8ffbfd959d5ba7f37f614c8a5c',1,'Convay.Core.Interfaces.IGame.Interval()']]],
+  ['ipoint',['IPoint',['../interface_convay_1_1_core_1_1_interfaces_1_1_i_point.html',1,'Convay::Core::Interfaces']]],
+  ['ipoint_2ecs',['IPoint.cs',['../_i_point_8cs.html',1,'']]],
+  ['irules',['IRules',['../interface_convay_1_1_core_1_1_interfaces_1_1_i_rules.html',1,'Convay::Core::Interfaces']]],
+  ['irules_2ecs',['IRules.cs',['../_i_rules_8cs.html',1,'']]],
+  ['isalive',['IsAlive',['../interface_convay_1_1_core_1_1_interfaces_1_1_i_point.html#a0a36d897859f1277414d4acc77b3f037',1,'Convay.Core.Interfaces.IPoint.IsAlive()'],['../class_convay_1_1_core_1_1_point.html#a03a544f933a7f068f635b7a33d790caa',1,'Convay.Core.Point.IsAlive()']]],
+  ['isrunning',['IsRunning',['../class_convay_1_1_core_1_1_game.html#ac770d7f2afda52d82efcc0882463de6d',1,'Convay.Core.Game.IsRunning()'],['../interface_convay_1_1_core_1_1_interfaces_1_1_i_game.html#a3757d3d601006324fffb3f50296c0222',1,'Convay.Core.Interfaces.IGame.IsRunning()']]],
+  ['ivisualizer',['IVisualizer',['../interface_convay_1_1_win_extension_1_1_i_visualizer.html',1,'Convay::WinExtension']]],
+  ['ivisualizer_2ecs',['IVisualizer.cs',['../_i_visualizer_8cs.html',1,'']]]
+];
